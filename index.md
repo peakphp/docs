@@ -1,6 +1,6 @@
 # Getting started
 
- - [Installation and requirements](installation.html)
+ - [Installation and requirements](installation)
  - [Main concept](concept)
  
 # Resources

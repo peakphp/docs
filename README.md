@@ -5,5 +5,5 @@
 <a href="https://packagist.org/packages/peakphp/framework"><img src="https://poser.pugx.org/peakphp/framework/license" alt="License"></a>
 </p>
 
-### Documentation official repo
-Read the doc here : [https://peak.readthedocs.io](https://peak.readthedocs.io)
+### Documentation official repository
+Read the documentation here : [https://peak.readthedocs.io](https://peak.readthedocs.io)
