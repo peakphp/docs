@@ -1,7 +1,8 @@
 site_name: "Peak Framework Docs"
 extra_css: ["css/style.css"]
 pages:
+  - Home: "index.md"
   - Components:
     - Di:
-      - "About & Installation": "components/di/installation.md"
+      - "Introduction": "components/di/installation.md"
       - "Basic usage" : "components/di/basic-usage.md"

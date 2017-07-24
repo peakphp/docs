@@ -1,4 +1,4 @@
-## Basic usage with Autowiring
+## Autowiring
 
 No configuration needed. Just type-hint your constructor parameters and the container can guess which dependencies to inject.
 
