@@ -14,7 +14,7 @@ class Foo {
 $container = new Container;
 $foo = $container->create(Foo::class);
 ```
-In example above, a new ``Bar`` instance is created automatically each time ```Foo``` is created. This mechanism rely on ```Reflection``` to resolve objects dependencies.
+In example above, a new ``Bar`` instance is created automatically each time ```Foo``` is created. This mechanism rely on ```Reflection``` to resolve objects dependencies. This is the default behavior of Peak Di.
 
 
 ### Reuse a class instance by storing it in the container with ```add()```
