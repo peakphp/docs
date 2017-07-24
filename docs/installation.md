@@ -2,7 +2,7 @@
 
 Peak 2.x requires:
 
-- PHP 5.6.x at least or PHP 7.x and +
+- PHP 5.6+ or PHP 7+
 - PDO PHP Extension (http://php.net/manual/en/pdo.installation.php)
 - Mbstring PHP Extension (http://php.net/manual/en/mbstring.installation.php)
 - IntlChar (http://php.net/manual/en/intl.installation.php)

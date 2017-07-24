@@ -1,8 +1,10 @@
 site_name: "Peak Framework Docs"
 extra_css: ["css/style.css"]
+repo_url: https://github.com/peakphp/docs
+repo_name: Github
 pages:
   - Home: "index.md"
   - Components:
     - Di:
-      - "Introduction": "components/di/installation.md"
-      - "Basic usage" : "components/di/basic-usage.md"
+      - "Introduction": "docs/components/di/installation.md"
+      - "Basic usage" : "docs/components/di/basic-usage.md"
