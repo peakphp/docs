@@ -16,12 +16,9 @@ No configuration needed. Just type-hint your constructor parameters and the cont
 
 ```PHP
 class Bar {}
-class Foo
-{
+class Foo {
     public $bar;
-
-    public function __construct(Bar $bar, $id = null, $alias = null)
-    {
+    public function __construct(Bar $bar, $id = null, $alias = null) {
         $this->bar = $bar;
     }
 }
