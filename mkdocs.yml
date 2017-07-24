@@ -11,3 +11,4 @@ pages:
     - Di:
       - "Introduction": "docs/components/di/installation.md"
       - "Basic usage" : "docs/components/di/basic-usage.md"
+      - "Create()" : "docs/components/di/create.md"
