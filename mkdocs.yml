@@ -1,2 +1,2 @@
 site_name: "Peak Framework Docs"
-extra_css: ["css/style.css"]
+extra_css: ["css/style.css", "css/dracula.css"]
