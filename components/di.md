@@ -200,7 +200,7 @@ A factory definition accept a callable definition that is executed each time.
 
 ```PHP
 
-$container-->bindFactory(Finger::class, function (Container $c, $args) {
+$container->bindFactory(Finger::class, function (Container $c, $args) {
     // do some stuff and then return a object
     return new Finger(
         new A, 
@@ -325,8 +325,12 @@ $container->bind(DatabaseConfiguration::class, function(ContainerInterface $c) {
 });
 
 $container->bind(Database::class, [
-    Database::class, // represent the class to instantiate
-    DatabaseConfiguration::class // will resolve DatabaseConfiguration::definition and return the same instance of DatabaseConfiguration each time
+    // represent the class to instantiate
+    Database::class, 
+    // will resolve DatabaseConfiguration::definition
+    // and return the same instance of DatabaseConfiguration each time
+    DatabaseConfiguration::class  
+    
 ]);
 
 
