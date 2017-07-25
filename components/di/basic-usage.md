@@ -48,6 +48,16 @@ $container->add(new Monolog\Logger);
 $logger = $container->get(Monolog\Logger::class);
 ```
 
+### Verify a stored class instance
+
+You can check if the container has particular stored class instance
+
+```PHP
+if ($container->has(Monolog\Logger::class)) {
+    // ...
+}
+```
+
 ### Use alias for stored class instance
 
 
