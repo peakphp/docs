@@ -10,7 +10,9 @@
     border-color: #333;
 }
 
-.wy-side-nav-search div[role=search]
+.wy-side-nav-search div[role=search] {
+    display:none;
+}
 
 h1 {
     color:#EF572E;
