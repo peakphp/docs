@@ -8,7 +8,7 @@ This can be done by binding definitions to class name with following methods:
 - ```bindPrototype()```
 - ```bindFactory()```
 
-To use definitions with ```create()```, you need to disable autowiring which is enabled by default:
+To let the container use defined definitions when creating objects, you need to disable autowiring which is enabled by default:
 
 ```PHP
 $container->disableAutowiring();
