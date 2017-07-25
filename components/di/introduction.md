@@ -13,4 +13,4 @@ $ composer require peakphp/di
 ```
 
 # Overview
-- [Using Autowiring](components/di/basic-usage/#using-autowiring)
+- [Using Autowiring](basic-usage/#using-autowiring)
