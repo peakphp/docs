@@ -2,6 +2,18 @@
     background-color: #EF572E;
 }
 
+.wy-side-nav-search a.icon:before {
+    display:none;
+}
+
+.wy-side-nav-search input[type=text] {
+    border-color: #333;
+}
+
+h1 {
+    color:#EF572E;
+}
+
 code {
     font-size: 95%;
 }
