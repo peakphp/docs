@@ -102,7 +102,7 @@ Array of definition represent a powerfull way to describe and group how dependen
 
 Inside the array of definition, supported type are: callable, classname string, object and array of definition. 
 
-The first item of the array always represent the class to instantiate, other represent constructor argument(s).
+When using class name string, the first item of the array always represent the class to instantiate, other represent constructor argument(s).
 
 ```PHP
 class A {
