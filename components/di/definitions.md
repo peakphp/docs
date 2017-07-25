@@ -2,7 +2,7 @@
 
 For small and medium projects, autowiring can do the job correctly, but as your project grow, you may want to have more control over your objects creations.
 
-This can be done with methods:
+This can be done by defining definitions with following methods:
 
 - ```bind()```
 - ```bindPrototype()```
