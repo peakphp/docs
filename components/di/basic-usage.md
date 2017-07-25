@@ -66,7 +66,7 @@ You can also resolve dependencies of a object method with```call()```. It work l
 
 ```PHP
 class Foo {
-    public function method(Bar $bar, $alias = null) {
+    public function method(Bar $bar, $alias) {
         return $bar;
     }
 }
