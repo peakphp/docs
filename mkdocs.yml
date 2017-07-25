@@ -2,9 +2,6 @@ site_name: "Peak Framework Docs"
 site_description: "Official documentation for the Peak Framework"
 copyright: "Francois Lajoie"
 extra_css: ["css/style.css"]
-repo_url: "https://github.com/peakphp/docs"
-repo_name: "Github"
-edit_uri: "tree/master/docs"
 pages:
   - Home: "docs/index.md"
   - Components:
