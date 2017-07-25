@@ -14,3 +14,5 @@ pages:
       - "Basic usage": "components/di/basic-usage.md"
       - "Create objects": "components/di/create.md"
       - "Advanced usage": "components/di/definitions.md"
+    - Rbac:
+      "Introduction": "components/rbac/introduction.md"
