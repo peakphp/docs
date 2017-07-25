@@ -20,7 +20,7 @@ In example above, a new ``Bar`` instance is created automatically each time ```F
 ### Reuse a class instance
 
 By default, method create() will always look for stored instance of Bar before creating a new one.
-You can store an class instance in the container with ```add()```é
+You can store an class instance in the container with ```add()```.
 
 ```PHP
 $bar = new Bar();
@@ -32,7 +32,7 @@ $foo1 = $container->create(Foo::class);
 $foo2 = $container->create(Foo::class);
 ```
 
-In example above, ``$foo1`` and ``$foo2`` will have the same instance of ``Bar``.
+In example above, ```$foo1``` and ```$foo2``` will have the same instance of ```Bar```.
 
 ```PHP
 echo $foo1->bar->name; //output: John Bar
