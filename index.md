@@ -5,7 +5,7 @@
 
 # Components
 
- - [Dependency Injection Container (Di)](components/di/about)
+ - [Dependency Injection Container (Di)](components/di/introduction)
  
 # Resources
  - [GitHub](https://github.com/peakphp)

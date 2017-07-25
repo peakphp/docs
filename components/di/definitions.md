@@ -10,7 +10,6 @@ This can be done with methods:
 
 To use definitions with ```create()```, you need to disable autowiring which is enabled by default:
 
-
 ```PHP
 $container->disableAutowiring();
 ```
@@ -28,7 +27,6 @@ There is many way you can declare definition. Here a list of accepted definition
 The default singleton definition binding is an object that is first created than stored and reused.
 
 ```PHP
-
 $container->disableAutowiring();
 
 $container->bind(Foo::class, new Foo);
@@ -41,10 +39,10 @@ $other_foo = $container->create(Foo::class);
 ```
 
 ### Factory
+
 A factory definition accept a callable definition that is executed each time.
 
 ```PHP
-
 $container->bindFactory(Finger::class, function (Container $c, $args) {
     /* do some stuff and then return a object */
     return new Finger(
@@ -61,10 +59,10 @@ $foo2 = $container->create(Foo::class);
 ```
 
 ### Prototype
+
 Prototype accept various definitions and always try to return a new instance of dependencies. ```bindPrototype()``` will ignore stored instance(s) and definition(s) in the container.
 
 ```PHP
-
 class Hand {}
 
 class Arm {
@@ -93,8 +91,8 @@ $chest = $container->create(Chest::class);
 // always contains a new instance of Hand and so on. 
 ```
 
-
 ### How Array of definition work
+
 Array of definition represent a powerfull way to describe and group how dependencies can be resolve for a definition. It also support nested definition.
 
 Inside the array of definition, supported type are: callable, classname string, object and array of definition. 
