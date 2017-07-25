@@ -10,6 +10,6 @@ pages:
   - Components:
     - Di:
       - "Introduction": "docs/components/di/installation.md"
-      - "Basic usage" : "docs/components/di/basic-usage.md"
-      - "Create()" : "docs/components/di/create.md"
-      - "Advanced usage" : "docs/components/di/definitions.md"
+      - "Basic usage": "docs/components/di/basic-usage.md"
+      - "Create()": "docs/components/di/create.md"
+      - "Advanced usage": "docs/components/di/definitions.md"
