@@ -5,13 +5,13 @@ Autowiring is enabled by default. To change this, use ```disableAutowiring()```.
 Under the hood, ```create()``` go through those steps in order:
 
 When Autowiring is enabled :
- - Check constructor type-hinted argument(s) using Reflection
- - Check for $explicit definition(s) to overload/guide the resolver
- - If no $explicit, look for a stored instance in the container, or instantiate a new one
+    - Check constructor type-hinted argument(s) using Reflection
+    - Check for $explicit definition(s) to overload/guide the resolver
+    - If no $explicit, look for a stored instance in the container, or instantiate a new one
    
 When Autowiring is disabled:
- - Check for $explicit definition(s) to overload/guide the resolver.
- - If no $explicit, look for a matching definition and resolve it.
+    - Check for $explicit definition(s) to overload/guide the resolver.
+    - If no $explicit, look for a matching definition and resolve it.
 
 
 #### Parameters
@@ -42,7 +42,7 @@ $foo = $container->create(Foo::class, [
 
 #### ```$explicit```
 
-Because autowiring is not always able to resolve an interface, you need to specify how the container should resolve it.
+Because autowiring is not always able to resolve an interface, you need to specify in those cases how the container should resolve it.
 
 Also, because this parameters can be also used to bypass a definition and/or a stored instance, you should only use it when you have no other choice. A better choice would be to rethink which object need to be stored or disable autowiring and use bind definition to control more precisely your objects creations.
 
