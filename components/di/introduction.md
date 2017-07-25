@@ -12,3 +12,5 @@ Using the component as standalone:
 $ composer require peakphp/di
 ```
 
+# Overview
+- [Using Autowiring](components/di/basic-usage/#using-autowiring)
