@@ -14,6 +14,7 @@ To use definitions with ```create()```, you need to disable autowiring which is 
 $container->disableAutowiring();
 ```
 
+
 ### Definitions type
 
 There is many way you can declare definition. Here a list of accepted definition for each one:
@@ -21,6 +22,7 @@ There is many way you can declare definition. Here a list of accepted definition
 - ```bind()``` : callable, classname string, object, array of definition
 - ```bindFactory()``` : callable only
 - ```bindPrototype()``` : classname string, array of definition
+
 
 ### Singleton
 
@@ -37,6 +39,7 @@ $foo->bar = 'foo';
 $other_foo = $container->create(Foo::class);
 // $foo === $other_foo
 ```
+
 
 ### Factory
 
@@ -57,6 +60,7 @@ $foo = $container->create(Foo::class);
 $foo2 = $container->create(Foo::class);
 // $foo !== $foo2
 ```
+
 
 ### Prototype
 
@@ -90,6 +94,7 @@ $chest = $container->create(Chest::class);
 // $chest will always contain a new instance of Arm and Arm will 
 // always contains a new instance of Hand and so on. 
 ```
+
 
 ### How Array of definition work
 
