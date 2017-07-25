@@ -8,12 +8,12 @@ Gruvbox style (dark) (c) Pavel Pertsev (original style at https://github.com/mor
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #282828;
+  background: #282828 !important;
 }
 
 .hljs,
 .hljs-subst {
-  color: #ebdbb2;
+  color: #ebdbb2 !important;
 }
 
 /* Gruvbox Red */
@@ -22,7 +22,7 @@ Gruvbox style (dark) (c) Pavel Pertsev (original style at https://github.com/mor
 .hljs-keyword,
 .hljs-link,
 .hljs-selector-tag {
-  color: #fb4934;
+  color: #EF572E !important;
 }
 
 /* Gruvbox Blue */
@@ -33,7 +33,7 @@ Gruvbox style (dark) (c) Pavel Pertsev (original style at https://github.com/mor
 .hljs-strong,
 .hljs-title,
 .hljs-variable {
-  color: #83a598;
+  color: #83a598 !important;
 }
 
 /* Gruvbox Yellow */
@@ -41,7 +41,7 @@ Gruvbox style (dark) (c) Pavel Pertsev (original style at https://github.com/mor
 .hljs-params,
 .hljs-template-tag,
 .hljs-type {
-  color: #fabd2f;
+  color: #fabd2f !important;
 }
 
 /* Gruvbox Purple */
@@ -49,7 +49,7 @@ Gruvbox style (dark) (c) Pavel Pertsev (original style at https://github.com/mor
 .hljs-doctag,
 .hljs-literal,
 .hljs-number {
-  color: #8f3f71;
+  color: #8f3f71 !important;
 }
 
 /* Gruvbox Orange */
@@ -58,7 +58,7 @@ Gruvbox style (dark) (c) Pavel Pertsev (original style at https://github.com/mor
 .hljs-regexp,
 .hljs-selector-id,
 .hljs-template-variable {
-  color: #fe8019;
+  color: #fe8019 !important;
 }
 
 /* Gruvbox Green */
@@ -69,7 +69,7 @@ Gruvbox style (dark) (c) Pavel Pertsev (original style at https://github.com/mor
 .hljs-selector-class,
 .hljs-string,
 .hljs-symbol {
-  color: #b8bb26;
+  color: #b8bb26 !important;
 }
 
 /* Gruvbox Aqua */
@@ -81,19 +81,19 @@ Gruvbox style (dark) (c) Pavel Pertsev (original style at https://github.com/mor
 .hljs-meta-keyword,
 .hljs-selector-pseudo,
 .hljs-tag {
-  color: #8ec07c;
+  color: #8ec07c !important;
 }
 
 /* Gruvbox Gray */
 .hljs-comment {
-  color: #928374;
+  color: #928374 !important;
 }
 
 /* Gruvbox Purple */
 .hljs-link_label,
 .hljs-literal,
 .hljs-number {
-  color: #d3869b;
+  color: #d3869b !important;
 }
 
 .hljs-comment,
