@@ -55,9 +55,10 @@ $logger = $container->get(Monolog\Logger::class);
 // when adding (shorter)
 $container->add(new Monolog\Handler\StreamHandler(), 'LogStream');
 $stream = $container->get('LogStream');
-// or after adding it to the container
+
+// or with addAlias
+$container->addAlias(Monolog\Handler\StreamHandler::class, 'LogStream');
 $container->add(new Monolog\Handler\StreamHandler);
-$container->addAlias(Monolog\Handler\StreamHandler::class, 'LogStream')
 $stream = $container->get('LogStream');
 ```
 
