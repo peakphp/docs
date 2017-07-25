@@ -74,8 +74,8 @@ $foo = $container->create(Foo::class, [], [
     InterfaceA::class => A::class
 ]);
 
-// you can also directly by pass the container by
-// creating a new instance for InterfaceA
+// you can also directly bypass the container by
+// creating a new instance of B for InterfaceA
 $foo = $container->create(Foo::class, [], [
     InterfaceA::class => function() {
         return new B;
