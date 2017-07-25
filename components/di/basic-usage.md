@@ -65,15 +65,15 @@ $stream = $container->get('LogStream');
 You can also resolve dependencies of a object method with```call()```. It work like method ```create()``` except for the first parameter which must be an array containing the object instance and the method string name. 
 
 ```PHP
-class Events {
+class Foo {
     public function method(Bar $bar, $alias = null) {
         return $bar;
     }
 }
 
-$events = new Events;
+$foo = new Foo;
 $bar = $container->call([
-    $events,
+    $foo,
     'method
 ]);
 ```
