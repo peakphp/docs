@@ -28,7 +28,7 @@
     padding-left:1em;
 }
 
-.rst-versions {
+.rst-versions, .rst-versions.shift {
     display:none;
 }
 
