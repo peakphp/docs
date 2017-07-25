@@ -20,7 +20,7 @@ In example above, a new ``Bar`` instance is created automatically each time ```F
 ### Reuse a class instance
 
 By default, method create() will always look for stored instance of Bar before creating a new one.
-You can store an class instance in the container with ```add()```
+You can store an class instance in the container with ```add()```é
 
 ```PHP
 $bar = new Bar();
@@ -41,7 +41,7 @@ echo $foo2->bar->name; //output: John Bar
 
 ### Get a stored class instance
 
-You can get a stored class instance by using ```get()```
+You can get a stored class instance by using ```get()```é
 
 ```PHP
 $container->add(new Monolog\Logger);
