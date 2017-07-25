@@ -4,14 +4,14 @@ copyright: "Peak Framework"
 repo_url: "https://github.com/peakphp/docs"
 extra_css: ["css/style.css", "css/gruvbox-dark.css"]
 pages:
-  - "Peak Framework": 
+  - Peak Framework: 
     - "Overview": "index.md"
     - "Installation": "installation.md"
-  - "Components":
-    - "Di":
+  - Components:
+    - Di:
       - "Introduction": "components/di/introduction.md"
       - "Basic usage": "components/di/basic-usage.md"
       - "Create objects": "components/di/create.md"
       - "Advanced usage": "components/di/definitions.md"
-    - "Rbac":
-      "Introduction": "components/rbac/introduction.md"
+    - Rbac:
+      - "Introduction": "components/rbac/introduction.md"
