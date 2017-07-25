@@ -2,7 +2,6 @@ site_name: "Peak Framework Docs"
 site_description: "Official documentation for the Peak Framework"
 copyright: "Peak Framework"
 repo_url: "https://github.com/peakphp/docs"
-edit_url: "blob/master/"
 extra_css: ["css/style.css", "css/gruvbox-dark.css"]
 pages:
   - "Peak Framework": 
@@ -14,5 +13,4 @@ pages:
       - "Basic usage": "components/di/basic-usage.md"
       - "Create objects": "components/di/create.md"
       - "Advanced usage": "components/di/definitions.md"
-    - Rbac:
-      "Introduction": "components/rbac/introduction.md"
+
