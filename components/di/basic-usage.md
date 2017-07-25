@@ -1,4 +1,4 @@
-## Autowiring
+## Using Autowiring
 
 No configuration needed. Just type-hint your constructor parameters and the container can guess which dependencies to inject.
 
@@ -56,7 +56,7 @@ $logger = $container->get(Monolog\Logger::class);
 $container->add(new Monolog\Handler\StreamHandler(), 'LogStream');
 $stream = $container->get('LogStream');
 
-// or with addAlias
+// or with addAlias()
 $container->addAlias(Monolog\Handler\StreamHandler::class, 'LogStream');
 $container->add(new Monolog\Handler\StreamHandler);
 $stream = $container->get('LogStream');
