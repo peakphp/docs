@@ -17,8 +17,10 @@ $foo = $container->create(Foo::class);
 In example above, a new ``Bar`` instance is created automatically each time ```Foo``` is created. This mechanism rely on ```Reflection``` to resolve objects dependencies. This is the default behavior of Peak Di.
 
 
-### Reuse a class instance by storing it in the container with ```add()```
+### Reuse a class instance
+
 By default, method create() will always look for stored instance of Bar before creating a new one.
+You can store an class instance in the container with ```add()```
 
 ```PHP
 $bar = new Bar();
@@ -37,21 +39,29 @@ echo $foo1->bar->name; //output: John Bar
 echo $foo2->bar->name; //output: John Bar
 ```
 
-### Get a stored object instance with ```get()```
+### Get a stored class instance
+
+You can get a stored class instance by using ```get()```
 
 ```PHP
 $container->add(new Monolog\Logger);
 $logger = $container->get(Monolog\Logger::class);
 ```
 
-### Use alias for class name
+### Use alias for stored class instance
+
 
 ```PHP
+// when adding (shorter)
 $container->add(new Monolog\Handler\StreamHandler(), 'LogStream');
+$stream = $container->get('LogStream');
+// or after adding it to the container
+$container->add(new Monolog\Handler\StreamHandler);
+$container->addAlias(Monolog\Handler\StreamHandler::class, 'LogStream')
 $stream = $container->get('LogStream');
 ```
 
-### Call an object method with ```call()```
+### Call an class instance method
 You can also resolve dependencies of a object method with```call()```. It work like method ```create()``` except for the first parameter which must be an array containing the object instance and the method string name. 
 
 ```PHP
