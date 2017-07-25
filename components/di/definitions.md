@@ -24,7 +24,7 @@ There is many way you can declare definition. Here a list of accepted definition
 - ```bindPrototype()``` : classname string, array of definition
 
 
-### Singleton
+### Singleton bind
 
 The default singleton definition binding is an object that is first created than stored and reused.
 
@@ -41,7 +41,7 @@ $other_foo = $container->create(Foo::class);
 ```
 
 
-### Factory
+### Factory bind
 
 A factory definition accept a callable definition that is executed each time.
 
@@ -62,7 +62,7 @@ $foo2 = $container->create(Foo::class);
 ```
 
 
-### Prototype
+### Prototype bind
 
 Prototype accept various definitions and always try to return a new instance of dependencies. ```bindPrototype()``` will ignore stored instance(s) and definition(s) in the container.
 
@@ -96,7 +96,7 @@ $chest = $container->create(Chest::class);
 ```
 
 
-### How Array of definition work
+### Array of definition
 
 Array of definition represent a powerfull way to describe and group how dependencies can be resolve for a definition. It also support nested definition.
 
