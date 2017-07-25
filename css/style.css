@@ -2,6 +2,10 @@
     background-color: #EF572E;
 }
 
+.wy-nav-top {
+    background: #EF572E;
+}
+
 .wy-side-nav-search a.icon:before {
     display:none;
 }
