@@ -100,7 +100,7 @@ $chest = $container->create(Chest::class);
 
 Array of definition represent a powerfull way to describe and group how dependencies can be resolve for a definition. It also support nested definition.
 
-Inside the array of definition, supported type are: callable, classname string, object and array of definition. 
+Supported types supported in an array of definiton: callable, classname string, object and array of definition. 
 
 When using class name string, the first item of the array always represent the class to instantiate, other represent constructor argument(s).
 
