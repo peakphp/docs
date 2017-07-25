@@ -6,14 +6,14 @@ Under the hood, ```create()``` go through those steps in order:
 
 When Autowiring is enabled :
 
-- Check constructor type-hinted argument(s) using ```Reflection```.
-- Check for ```$explicit``` definition(s) to overload/guide the resolver.
-- If no ```$explicit```, look for a stored instance in the container, or instantiate a new one.
+* Check constructor type-hinted argument(s) using ```Reflection```.
+* Check for ```$explicit``` definition(s) to overload/guide the resolver.
+* If no ```$explicit```, look for a stored instance in the container, or instantiate a new one.
    
 When Autowiring is disabled:
 
-- Check for ```$explicit``` definition(s) to overload/guide the resolver.
-- If no ```$explicit```, look for a matching definition and resolve it.
+* Check for ```$explicit``` definition(s) to overload/guide the resolver.
+* If no ```$explicit```, look for a matching definition and resolve it.
 
 
 #### Parameters
