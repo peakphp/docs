@@ -28,6 +28,10 @@
     padding-left:1em;
 }
 
+.rst-versions {
+    display:none;
+}
+
 
 h1, h2, h3, h4 {
     color:#EF572E;
