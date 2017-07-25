@@ -41,7 +41,7 @@ echo $foo2->bar->name; //output: John Bar
 
 ### Get a stored class instance
 
-You can get a stored class instance by using ```get()```é
+You can get a stored class instance by using ```get()```.
 
 ```PHP
 $container->add(new Monolog\Logger);
@@ -68,7 +68,7 @@ You can also resolve dependencies of a object method with```call()```. It work l
 
 ```PHP
 class Foo {
-    public function method(Bar $bar, $alias) {
+    public function add(Bar $bar, $alias) {
         return $bar;
     }
 }
@@ -76,6 +76,6 @@ class Foo {
 $foo = new Foo;
 $bar = $container->call([
     $foo,
-    'method
+    'add'
 ]);
 ```
