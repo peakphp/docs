@@ -12,6 +12,7 @@ Using the component as standalone:
 $ composer require peakphp/di
 ```
 
+
 # Overview
 
 Basic usage:
