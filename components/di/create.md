@@ -62,15 +62,23 @@ class Foo {
 // throw an exception, there is no InterfaceA stored in container
 $foo = $container->create(Foo::class);
 
-// by adding class A instance, the container is now able to resolve Foo correctly
+// by adding class A instance, the container is now able to 
+// resolve correctly InterfaceA in ```Foo``` constructor
 $container->add(new A);
 $foo = $container->create(Foo::class);
 
-// now we add another class that implement InterfaceA so you
+// now we add another class that implements InterfaceA so you
 // need to specify which one to use, otherwise, it will throw an exception
 $container->add(new B);
 $foo = $container->create(Foo::class, [], [
     InterfaceA::class => A::class
 ]);
 
+// you can also directly by pass the container by
+// creating a new instance for InterfaceA
+$foo = $container->create(Foo::class, [], [
+    InterfaceA::class => function() {
+        return new B;
+    }
+]);
 ```
