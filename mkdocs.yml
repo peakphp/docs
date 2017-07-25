@@ -3,10 +3,10 @@ site_description: "Official documentation for the Peak Framework"
 copyright: "Francois Lajoie"
 extra_css: ["css/style.css"]
 pages:
-  - Home: "docs/index.md"
+  - Home: "index.md"
   - Components:
     - Di:
-      - "Introduction": "docs/components/di/installation.md"
-      - "Basic usage": "docs/components/di/basic-usage.md"
-      - "Create()": "docs/components/di/create.md"
-      - "Advanced usage": "docs/components/di/definitions.md"
+      - "Introduction": "components/di/installation.md"
+      - "Basic usage": "components/di/basic-usage.md"
+      - "Create()": "components/di/create.md"
+      - "Advanced usage": "components/di/definitions.md"
