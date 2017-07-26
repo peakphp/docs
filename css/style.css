@@ -43,7 +43,7 @@ code {
     display:none;
 }
 
-.wy-menu.wy-menu-vertical .toctree-l1 {
+.wy-menu.wy-menu-vertical .subnav ul .toctree-l1 {
     display:none;
 }
 
