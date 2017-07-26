@@ -8,6 +8,11 @@ pages:
     - "Overview": "index.md"
     - "Installation": "installation.md"
   - Components:
-    - Di: "components/di/overview.md"
+    - Di:
+      - "Introduction": "components/di/introduction.md"
+      - "Overview": "components/di/overview.md"
+      - "Basic usage": "components/di/basic-usage.md"
+      - "Create objects": "components/di/create.md"
+      - "Advanced usage": "components/di/definitions.md"
     - Rbac:
       - "Introduction": "components/rbac/introduction.md"
