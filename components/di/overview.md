@@ -1,5 +1,7 @@
 <span class="title">Overview of <span>Peak\Di</span></span>
 
+[Introduction](introduction)
+
 Basic usage:
 
 - [Using Autowiring](basic-usage/#using-autowiring)
