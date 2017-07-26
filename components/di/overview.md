@@ -1,4 +1,4 @@
-<span class="title">Overview</span>
+<span class="title">Overview of <span>Peak\Di</span></span>
 
 Basic usage:
 
