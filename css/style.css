@@ -43,6 +43,15 @@ code {
     display:none;
 }
 
+.wy-menu.wy-menu-vertical .toctree-l1 {
+    display:none;
+}
+
+.wy-menu.wy-menu-vertical .subnav .subnav > li:not(.toctree-l1)  {
+    display:none;
+}
+
+
 /* CUSTOM STYLE */
 
 span.title {

@@ -8,6 +8,7 @@ pages:
     - "Overview": "index.md"
     - "Installation": "installation.md"
   - Components:
+    - Di: "components/di/overview.md"
     - Di:
       - "Introduction": "components/di/introduction.md"
       - "Overview": "components/di/overview.md"
