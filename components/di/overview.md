@@ -1,5 +1,3 @@
-**Overview**
-
 <span class="title">Overview</span>
 
 Basic usage:
