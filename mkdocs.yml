@@ -3,6 +3,7 @@ site_description: "Official documentation for the Peak Framework"
 copyright: "Peak Framework"
 repo_url: "https://github.com/peakphp/docs"
 extra_css: ["css/style.css", "css/gruvbox-dark.css"]
+theme: "material"
 pages:
   - Peak Framework: 
     - "Overview": "index.md"
