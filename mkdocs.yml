@@ -9,5 +9,3 @@ pages:
     - "Installation": "installation.md"
   - Components:
     - Di: "components/di/overview.md"
-    - Rbac:
-      - "Introduction": "components/rbac/introduction.md"
