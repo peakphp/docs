@@ -1,8 +1,19 @@
+/* READTHEDOCS STYLE */
+
+
+h1, h2, h3, h4 {
+    color:#EF572E;
+}
+
+code {
+    color: #2980b9;
+    font-size: 95%;
+}
+
 .wy-side-nav-search {
     background-color: #EF572E;
     padding:0.95em;
 }
-
 
 .wy-nav-top {
     background: #EF572E;
@@ -32,12 +43,10 @@
     display:none;
 }
 
+/* CUSTOM STYLE */
 
-h1, h2, h3, h4 {
+span.title {
     color:#EF572E;
+    font-size:175%;
 }
 
-code {
-    color: #2980b9;
-    font-size: 95%;
-}
