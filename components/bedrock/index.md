@@ -1,5 +1,9 @@
-# Bedrock
-##### Bedrock contains the Application and HTTP Application component
+# Bedrock component
+
+#####This component allow you to create generic Application and HTTP Application with the help of Middlewares.
+
+
+What better way to demonstrate how it work, than showing an example.
 
 
 Example with Zend\Diactoros: 
