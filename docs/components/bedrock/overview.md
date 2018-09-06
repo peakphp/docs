@@ -129,8 +129,6 @@ try {
     $app->set(new DevExceptionHandler($e))
         ->run($request, $emitter);
 }
-
-```
 ```
     
 
