@@ -1,6 +1,6 @@
 # Overview
 
-### Creating an HTTP application
+### How to start
 
 To create an new application instance, you need 3 things:
 
