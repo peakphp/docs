@@ -28,6 +28,8 @@ There is two outcomes possible when the main stack is resolved:
 1. It stop when a *PSR-7* response is returned.
 2. It throw an exception because no response have been returned.
 
+<img src="http://francoislajoie.com/assets/img/peaklogo.jpg" alt="Peak">
+
 ### How to build your stack
 
 Adding stuff to your `Application` stack in done with method `add()` and `set()`.
@@ -60,7 +62,7 @@ try {
 }
 ```
 
-### How to tackle the response
+### How to output the response
 
 The easiest way to output a *PSR-7* response is to use `Peak\Bedrock\Http\Response\Emitter`.
 
