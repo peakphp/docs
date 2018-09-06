@@ -24,11 +24,10 @@ The application is essentially a stack of resources acting as request middleware
 When a *PSR-7* request is send to the `Application`, the main stack is resolved and executed. 
 
 There is two outcomes possible when the main stack is resolved:
- 
 1. It stop when a *PSR-7* response is returned.
 2. It throw an exception because no response have been returned.
 
-<img src="http://francoislajoie.com/assets/img/peaklogo.jpg" alt="Peak">
+<img src="https://raw.githubusercontent.com/peakphp/docs/master/pencils/request_response_flow.png" alt="Peak">
 
 ### How to build your stack
 
