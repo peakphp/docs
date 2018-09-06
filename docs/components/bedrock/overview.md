@@ -87,7 +87,6 @@ We will use `ApplicationFactory` to create our app.
 ```php
 use Peak\Di\Container; // PSR-11
 use Peak\Bedrock\ApplicationFactory; // PSR-15
-use Peak\Bedrock\Http\StackFactory; // PSR-15
 use Peak\Bedrock\Http\Response\Emitter;
 use Zend\Diactoros\ServerRequestFactory; // PSR-7
 
@@ -123,6 +122,7 @@ try {
     
     // handle request and emit app stack response
     $app->run($request, $emitter);
+    
 } catch(Exception $e) {
     // overwrite app stack with error middleware
     $app->set(new DevExceptionHandler($e))
