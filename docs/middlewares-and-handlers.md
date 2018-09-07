@@ -63,6 +63,6 @@ $myMiddleware = function ($request, $handler) {
 
 $myHandler = function ($request) {
     // ...
-    return return new Response('...');
+    return new Response('...');
 }
 ```
