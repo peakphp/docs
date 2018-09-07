@@ -1,6 +1,6 @@
 # Middlewares and Handlers
 
-Middlewares and handlers are essentials parts of your Applications stack. They job is to simply received a request, do stuff and in case of middlewares, call the next middlewares and handlers return a response whenever possible. They are also fully compatible on [PSR-15: HTTP Server Request Handlers](https://www.php-fig.org/psr/psr-15/).
+Middlewares and handlers are essentials parts of Peak Applications stack. Their job is to simply received a request, do stuff and in case of a middleware, call the next middleware and for handler, return a response whenever possible. They are also fully compatible on [PSR-15: HTTP Server Request Handlers](https://www.php-fig.org/psr/psr-15/).
 
 ### Here a middleware example: 
 
@@ -25,6 +25,8 @@ class middlewareA implements MiddlewareInterface
 }
 ```
 
+Note: Middleware can also return a Response when appropriate, and when it happens, the chain of middlewares is stopped.
+
 ### Here an handler example: 
 
 ```php
@@ -44,15 +46,18 @@ class HandlerA implements RequestHandlerInterface
     }
 }  
 ```
+
 ### Using closure
 You can also write middlewares and handlers with closure. Underneath, they will be wrapped on `CallableMiddleware` which is *PSR-15* compliant. The only downside is that closure are less reusable outside your application. Also, it is generally not a good idea to use closure for complex middleware, but for small task and prototyping, they comes really handy.
 
 ```php
 $myMiddleware = function ($request, $handler) {
+    // ...
     return $handler->handle($request);
 }
 
 $myHandler = function ($request) {
-     return return new Response('...');
- }
+    // ...
+    return return new Response('...');
+}
 ```
