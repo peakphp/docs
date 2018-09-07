@@ -1,8 +1,11 @@
 # Middlewares and Handlers
 
-Middlewares and handlers are essentials parts of Peak Applications stack. Their job is to simply received a request, do stuff and in case of a middleware, call the next middleware and for handler, return a response whenever possible. They are also fully compatible on [PSR-15: HTTP Server Request Handlers](https://www.php-fig.org/psr/psr-15/).
+Middlewares and handlers are essentials parts of Peak Applications stack. Their job is to simply receive a request, do stuff and call the next middleware or return a response whenever possible. They are also fully compatible with [PSR-7](https://www.php-fig.org/psr/psr-7/) and [PSR-15](https://www.php-fig.org/psr/psr-15/)
 
-### Here a middleware example: 
+<img src="https://raw.githubusercontent.com/peakphp/docs/master/pencils/request_response_flow.png" alt="Peak">
+
+
+### Middleware example: 
 
 ```php
 use Psr\Http\Server\MiddlewareInterface;
@@ -27,7 +30,9 @@ class middlewareA implements MiddlewareInterface
 
 Note: Middleware can also return a Response when appropriate, and when it happens, the chain of middlewares is stopped.
 
-### Here an handler example: 
+### Handler example: 
+
+The main difference with handlers is that you are obligated to return response. You cannot pass the request to the next middleware.
 
 ```php
 use Psr\Http\Server\RequestHandlerInterface;
@@ -47,8 +52,8 @@ class HandlerA implements RequestHandlerInterface
 }  
 ```
 
-### Using closure
-You can also write middlewares and handlers with closure. Underneath, they will be wrapped on `CallableMiddleware` which is *PSR-15* compliant. The only downside is that closure are less reusable outside your application. Also, it is generally not a good idea to use closure for complex middleware, but for small task and prototyping, they comes really handy.
+### Closure middleware
+You can also write middlewares and handlers with closure. Underneath, they will be wrapped in `CallableMiddleware` which is *PSR-15* compliant. The only downside is that closure are less reusable outside your application. Also, it is generally not a good idea to use closure for complex middleware, but for small task and prototyping, they comes really handy.
 
 ```php
 $myMiddleware = function ($request, $handler) {
