@@ -32,7 +32,7 @@ Note: Middleware can also return a Response when appropriate, and when it happen
 
 ### Handler example: 
 
-The main difference with handlers is that you are obligated to return response. You cannot pass the request to the next middleware.
+The main difference with handlers is that you are obligated to return response. They cannot pass the request to the next middleware.
 
 ```php
 use Psr\Http\Server\RequestHandlerInterface;
