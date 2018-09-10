@@ -109,7 +109,6 @@ $app->add([
         AuthenticationMiddleware::class,
         UserFormHandler::class
     ]),
-    LogNotFoundMiddleware::class
     PageNotFoundHandler::class
 ]);
 

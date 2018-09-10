@@ -10,7 +10,7 @@ $ composer require peakphp/di
 
 ## Basic usage
 
-### With Autowiring
+### With AutoWiring
 
 No configuration needed. Just type-hint your constructor parameters and the container can guess which dependencies to inject.
 
@@ -30,16 +30,16 @@ In example above, a new ``Bar`` instance is created automatically each time ```F
 
 ### How method create() work
 The method create() will help you to instantiate objects. It is important to understand that enabling/disabling autowiring affect how this method create objects.
-Autowiring is enabled by default. To change this, use ```disableAutowiring()```.
+AutoWiring is enabled by default. To change this, use ```disableAutoWiring()```.
 
 Under the hood, ```create()``` go through those steps in order:
 
-When Autowiring is enabled :
+When AutoWiring is enabled :
  - Check constructor type-hinted argument(s) using Reflection
  - Check for $explicit definition(s) to overload/guide the resolver
  - If no $explicit, look for a stored instance in the container, or instantiate a new one
    
-When Autowiring is disabled:
+When AutoWiring is disabled:
  - Check for $explicit definition(s) to overload/guide the resolver.
  - If no $explicit, look for a matching definition and resolve it.
 
@@ -155,7 +155,7 @@ $bar = $container->call([
 ]);
 ```
 
-### Definitions (Autowiring disabled)
+### Definitions (AutoWiring disabled)
 
 For small and medium projects, autowiring can do the job correctly, but as your project grow, you may want to have more control over your objects creations.
 
@@ -169,7 +169,7 @@ To use definitions with ```create()```, you need to disable autowiring which is 
 
 
 ```PHP
-$container->disableAutowiring();
+$container->disableAutoWiring();
 ```
 
  
@@ -179,7 +179,7 @@ The default singleton definition binding is an object that is first created than
 
 ```PHP
 
-$container->disableAutowiring();
+$container->disableAutoWiring();
 
 $container->bind(Foo::class, new Foo);
 $foo = $container->create(Foo::class);
