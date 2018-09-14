@@ -2,19 +2,22 @@
 
 ### How to start
 
-To create an new application instance, you need 3 things:
+To create an new application instance, you need at least 3 things:
 
- - a *PSR-11* Container
- - Kernel with an environment
- - Handlers resolvers.
+ - a **Kernel** (*Peak\Blueprint\Bedrock\Kernel*) 
+ - a **Container** PSR-11 (*Psr\Container\ContainerInterface*)
+ - a **Resource resolvers** (*Peak\Blueprint\Common\ResourceResolver*)
+ - (optional) A **Dictionary** for properties (*Peak\Blueprint\Collection\Dictionary*)
 
 ```php
-$container = new Container(); // PSR-11
-$kernel = new Kernel('prod', $container);
+$kernel = new Kernel('prod', new Container());
 $app = new Application(
     $kernel,
     new HandlerResolver(),
-    '2.0.0', // optional, default is 1.0
+    new PropertiesBag([ // optional
+        'version' => '1.0', 
+        'name' => 'app'
+    ]) 
 )
 ```
 
