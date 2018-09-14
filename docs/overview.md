@@ -10,9 +10,8 @@ To create an new application instance, you need at least 3 things:
  - (optional) A **Dictionary** for properties (*Peak\Blueprint\Collection\Dictionary*)
 
 ```php
-$kernel = new Kernel('prod', new Container());
 $app = new Application(
-    $kernel,
+    new Kernel('prod', new Container()),
     new HandlerResolver(),
     new PropertiesBag([ // optional
         'version' => '1.0', 
