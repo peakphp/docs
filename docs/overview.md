@@ -33,12 +33,12 @@ There is two outcomes possible when the main stack is resolved:
 
 ### How to build your stack
 
-Adding stuff to your `Application` stack in done with method `add()` and `set()`.
-They work both the same way except that `add()` append stuff the stack and  `set()` overwrite what was previously added to the stack.
+Adding stuff to your `Application` stack in done with method `stack()` and `set()`.
+They work both the same way except that `stack()` append stuff and  `set()` overwrite what was previously added to the stack.
 
 ```php
-$app->add(MiddlewareA::class);
-$app->add([
+$app->stack(MiddlewareA::class);
+$app->stack([
     MiddlewareB::class, 
     MiddlewareC::class
 ]);
