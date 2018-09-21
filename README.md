@@ -14,7 +14,7 @@
     - [Closure middleware](https://github.com/peakphp/docs/blob/master/docs/middlewares-and-handlers.md#closure-middleware)
 
 ### Components
-- #####[Di](https://github.com/peakphp/docs/blob/master/docs/components/di.md) (Dependency Injection)
+- ##### [Di](https://github.com/peakphp/docs/blob/master/docs/components/di.md) (Dependency Injection)
     - [Basic usage & AutoWiring](https://github.com/peakphp/docs/blob/master/docs/components/di.md#basic-usage)
     - [Create object](https://github.com/peakphp/docs/blob/master/docs/components/di.md#how-method-create-work)
     - [Add object to container](https://github.com/peakphp/docs/blob/master/docs/components/di.md#reuse-a-class-instance-by-storing-it-in-the-container-with-add)
