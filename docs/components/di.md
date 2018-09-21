@@ -167,12 +167,9 @@ This can be done with methods:
 
 To use definitions with ```create()```, you need to disable autowiring which is enabled by default:
 
-
 ```PHP
 $container->disableAutoWiring();
-```
-
- 
+``` 
 
 ### Singleton definition with ```bind()```
 The default singleton definition binding is an object that is first created than stored and reused.
@@ -243,12 +240,6 @@ $chest = $container->create(Chest::class);
 // always contains a new instance of Hand and so on. 
 ```
 
-### Definitions type
-There is many way you can declare definition. Here a list of accepted definition for each one:
-
-- ```bind()``` : callable, classname string, object, array of definition
-- ```bindFactory()``` : callable only
-- ```bindPrototype()``` : classname string, array of definition
 
 ### How Array definition work
 Array definition represent a powerfull way to describe and group how dependencies can be resolve for a definition. It also support nested definition.
