@@ -1,19 +1,20 @@
 # Peak Documentation
 
-- [Overview](https://github.com/peakphp/docs/blob/master/docs/overview.md)
+- ##### [Overview](https://github.com/peakphp/docs/blob/master/docs/overview.md)
     - [How to start](https://github.com/peakphp/docs/blob/master/docs/overview.md#how-to-start)
     - [How it works](https://github.com/peakphp/docs/blob/master/docs/overview.md#how-it-works-)
     - [Build your stack](https://github.com/peakphp/docs/blob/master/docs/overview.md#how-to-build-your-stack)
     - [Process a server request](https://github.com/peakphp/docs/blob/master/docs/overview.md#how-to-process-a-server-request)
     - [Output a response](https://github.com/peakphp/docs/blob/master/docs/overview.md#how-to-output-the-response)
     - [Application example](https://github.com/peakphp/docs/blob/master/docs/overview.md#complete-application-example-from-a-to-z)
-- [Middlewares and Handlers](https://github.com/peakphp/docs/blob/master/docs/middlewares-and-handlers.md)
+    
+- ##### [Middlewares and Handlers](https://github.com/peakphp/docs/blob/master/docs/middlewares-and-handlers.md)
     - [Middleware example](https://github.com/peakphp/docs/blob/master/docs/middlewares-and-handlers.md#middleware-example)
     - [Handler example](https://github.com/peakphp/docs/blob/master/docs/middlewares-and-handlers.md#handler-example)
     - [Closure middleware](https://github.com/peakphp/docs/blob/master/docs/middlewares-and-handlers.md#closure-middleware)
 
-#### Components
-- [Di](https://github.com/peakphp/docs/blob/master/docs/components/di.md) (Dependency Injection)
+### Components
+- #####[Di](https://github.com/peakphp/docs/blob/master/docs/components/di.md) (Dependency Injection)
     - [Basic usage & AutoWiring](https://github.com/peakphp/docs/blob/master/docs/components/di.md#basic-usage)
     - [Create object](https://github.com/peakphp/docs/blob/master/docs/components/di.md#how-method-create-work)
     - [Add object to container](https://github.com/peakphp/docs/blob/master/docs/components/di.md#reuse-a-class-instance-by-storing-it-in-the-container-with-add)
@@ -26,11 +27,3 @@
     - [Prototype definition](https://github.com/peakphp/docs/blob/master/docs/components/di.md#prototype-definition-with-bindfactory)
     - [Array definition](https://github.com/peakphp/docs/blob/master/docs/components/di.md#how-array-definition-work)
     
-    
-
-
-
-
-
-<p align="center"><img src="http://francoislajoie.com/assets/img/peaklogo.jpg" alt="Peak"></p>
-
