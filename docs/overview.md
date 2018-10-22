@@ -23,7 +23,7 @@ $app = new Application(
 
 ### How it works ?
 
-The application is essentially a stack of resources acting as request middleware and handler. 
+The application is essentially a stack of resources acting as request middlewares and handlers. 
 When a *PSR-7* request is send to the `Application`, the main stack is resolved and executed. 
 
 There is two outcomes possible when the main stack is resolved:
