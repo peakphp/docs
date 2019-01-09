@@ -1,11 +1,11 @@
 /*
-Error: Invalid CSS after "...l-theme-cayman'": expected "{", was ";"
+Error: Invalid CSS after "...eme-cayman.css'": expected "{", was ";"
         on line 4 of style.scss
 
 1: ---
 2: ---
 3: 
-4: @import '../../_sass/jekyll-theme-cayman';
+4: @import '../../_sass/jekyll-theme-cayman.css';
 
 Backtrace:
 style.scss:4
@@ -37,4 +37,4 @@ C:/Ruby24-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...l-theme-cayman'\": expected \"{\", was \";\"\A         on line 4 of style.scss\A \A 1: ---\A 2: ---\A 3: \A 4: @import '../../_sass/jekyll-theme-cayman';"; }
+  content: "Error: Invalid CSS after \"...eme-cayman.css'\": expected \"{\", was \";\"\A         on line 4 of style.scss\A \A 1: ---\A 2: ---\A 3: \A 4: @import '../../_sass/jekyll-theme-cayman.css';"; }
