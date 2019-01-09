@@ -1,6 +1,9 @@
-# Components
+# Peak Framework
 
- - [Bedrock](components/di/index) Http foundation (PSR-7, PSR-11, PSR-15)
+
+## Components
+
+ - [Bedrock](docs/components/di/index) Http foundation (PSR-7, PSR-11, PSR-15)
  - [Blueprint](components/di/index) Interfaces
  - [Collection](components/di/index) Collections
  - [Common](components/di/index) Generic stuff, tools and utils
