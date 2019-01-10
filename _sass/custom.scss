@@ -15,6 +15,23 @@ $small-header-height: 50px;
   float:right;
 }
 
-.main-content table th, .main-content table td {
-  text-align: left;
+.main-content-with-sidebar {
+
+  .main-content;
+
+  table th, .main-content table td {
+    text-align: left;
+  }
+
+  aside {
+    max-width: 16rem;
+    float:left;
+  }
+
+  .content-wrapper {
+    @include large {
+      max-width: 48rem;
+      margin-left: 16rem;
+    }
+  }
 }
