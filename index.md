@@ -3,9 +3,8 @@ title: Peak Framework Documentation
 layout: home
 ---
 
-
-
-## Components
+## Packages
+<div id="packages"></div>
 
  - ``Bedrock`` Application foundation (PSR-7, PSR-11, PSR-15) 
  - ``Blueprint`` Set of interfaces  that define framework packages
