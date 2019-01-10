@@ -10,7 +10,7 @@ This can be done by binding definitions to class name with following methods:
 
 To let the container use defined definitions when creating objects, you need to disable autowiring which is enabled by default:
 
-```PHP
+```php
 $container->disableAutowiring();
 ```
 
@@ -28,7 +28,7 @@ There is many way you can declare definition. Here a list of accepted definition
 
 The default singleton definition binding is an object that is first created than stored and reused.
 
-```PHP
+```php
 $container->disableAutowiring();
 
 $container->bind(Foo::class, new Foo);
@@ -45,7 +45,7 @@ $other_foo = $container->create(Foo::class);
 
 A factory definition accept a callable definition that is executed each time.
 
-```PHP
+```php
 $container->bindFactory(Finger::class, function (Container $c, $args) {
     /* do some stuff and then return a object */
     return new Finger(
@@ -66,7 +66,7 @@ $foo2 = $container->create(Foo::class);
 
 Prototype accept various definitions and always try to return a new instance of dependencies. ```bindPrototype()``` will ignore stored instance(s) and definition(s) in the container.
 
-```PHP
+```php
 class Hand {}
 
 class Arm {
@@ -104,7 +104,7 @@ Supported types supported in an array of definiton: callable, classname string, 
 
 When using class name string, the first item of the array always represent the class to instantiate, other represent constructor argument(s).
 
-```PHP
+```php
 class A {
     public function __construct(B $b, C $c, $id) {
         // ...
@@ -149,7 +149,7 @@ In the example above, the main difference between ```bind()``` and php vanilla i
 A more concrete example would be something like:
 
 
-```PHP
+```php
 class Database {
     public function __construct(DatabaseConfiguration $config) {
         // ...

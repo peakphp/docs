@@ -17,7 +17,7 @@ When Autowiring is disabled:
 
 
 #### Parameters
-```PHP
+```php
 create(string $class [, array $args = [] [, mixed $explicit = null ]]])
 ```
 
@@ -29,7 +29,7 @@ Represent the class string name you want to create.
 
 Represent other(s) non-object parameters if apply (or arguments if you prefer).
 
-```PHP
+```php
 class Foo {
     public function __construct(Bar $bar, $id = null, $desc = null) {
         $this->bar = $bar;
@@ -48,7 +48,7 @@ Because autowiring is not always able to resolve an interface, you need to speci
 
 Also, because this parameters can be also used to bypass a definition and/or a stored instance, you should only use it when you have no other choice. A better choice would be to rethink which object need to be stored or disable autowiring and use bind definition to control more precisely your objects creations.
 
-```PHP
+```php
 interface InterfaceA {}
 class A implements InterfaceA {}
 class B implements InterfaceA {}

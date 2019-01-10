@@ -2,7 +2,7 @@
 
 No configuration needed. Just type-hint your constructor parameters and the container can guess which dependencies to inject.
 
-```PHP
+```php
 class Bar {}
 class Foo {
     public $bar;
@@ -22,7 +22,7 @@ In example above, a new ``Bar`` instance is created automatically each time ```F
 By default, method create() will always look for stored instance of Bar before creating a new one.
 You can store an class instance in the container with ```add()```.
 
-```PHP
+```php
 $bar = new Bar();
 $bar->name = "John Bar";
 
@@ -34,7 +34,7 @@ $foo2 = $container->create(Foo::class);
 
 In example above, ```$foo1``` and ```$foo2``` will have the same instance of ```Bar```.
 
-```PHP
+```php
 echo $foo1->bar->name; //output: John Bar
 echo $foo2->bar->name; //output: John Bar
 ```
@@ -43,7 +43,7 @@ echo $foo2->bar->name; //output: John Bar
 
 You can get a stored class instance by using ```get()```.
 
-```PHP
+```php
 $container->add(new Monolog\Logger);
 $logger = $container->get(Monolog\Logger::class);
 ```
@@ -52,7 +52,7 @@ $logger = $container->get(Monolog\Logger::class);
 
 You can check if the container has particular stored class instance
 
-```PHP
+```php
 if ($container->has(Monolog\Logger::class)) {
     // ...
 }
@@ -61,7 +61,7 @@ if ($container->has(Monolog\Logger::class)) {
 ### Use alias for stored class instance
 
 
-```PHP
+```php
 // when adding (shorter)
 $container->add(new Monolog\Handler\StreamHandler(), 'LogStream');
 $stream = $container->get('LogStream');
@@ -76,7 +76,7 @@ $stream = $container->get('LogStream');
 
 You can also resolve dependencies of a object method with```call()```. It work like method ```create()``` except for the first parameter which must be an array containing the object instance and the method string name. 
 
-```PHP
+```php
 class Foo {
     public function add(Bar $bar, $alias) {
         return $bar;
