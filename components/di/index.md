@@ -9,16 +9,14 @@ This component allows you to standardize and centralize the way objects are cons
 $ composer require peak/di
 ```
 
-[Introduction](introduction)
-
 Basic usage:
 
-- [Using Autowiring](basic-usage/#using-autowiring)
-- [Reuse a class instance](basic-usage/#reuse-a-class-instance)
-- [Get a stored class instance](basic-usage/#get-a-stored-class-instance)
-- [Verify a stored class instance](basic-usage/#verify-a-stored-class-instance)
-- [Use alias for stored class instance](basic-usage/#use-alias-for-stored-class-instance)
-- [Call an class instance method](basic-usage/#call-an-class-instance-method)
+- [Using Autowiring](basic-usage#using-autowiring)
+- [Reuse a class instance](basic-usage#reuse-a-class-instance)
+- [Get a stored class instance](basic-usage#get-a-stored-class-instance)
+- [Verify a stored class instance](basic-usage#verify-a-stored-class-instance)
+- [Use alias for stored class instance](basic-usage#use-alias-for-stored-class-instance)
+- [Call an class instance method](basic-usage#call-an-class-instance-method)
 
 Create objects:
 
