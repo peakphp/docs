@@ -1,5 +1,3 @@
-# Peak Documentation
-
 - ##### [Overview](https://github.com/peakphp/docs/blob/master/docs/overview.md)
     - [How to start](https://github.com/peakphp/docs/blob/master/docs/overview.md#how-to-start)
     - [How it works](https://github.com/peakphp/docs/blob/master/docs/overview.md#how-it-works-)
@@ -8,10 +6,12 @@
     - [Output a response](https://github.com/peakphp/docs/blob/master/docs/overview.md#how-to-output-the-response)
     - [Application example](https://github.com/peakphp/docs/blob/master/docs/overview.md#complete-application-example-from-a-to-z)
     
+    
 - ##### [Middlewares and Handlers](https://github.com/peakphp/docs/blob/master/docs/middlewares-and-handlers.md)
     - [Middleware example](https://github.com/peakphp/docs/blob/master/docs/middlewares-and-handlers.md#middleware-example)
     - [Handler example](https://github.com/peakphp/docs/blob/master/docs/middlewares-and-handlers.md#handler-example)
     - [Closure middleware](https://github.com/peakphp/docs/blob/master/docs/middlewares-and-handlers.md#closure-middleware)
+
 
 ### Components
 - ##### [Di](https://github.com/peakphp/docs/blob/master/docs/components/di.md) (Dependency Injection)
