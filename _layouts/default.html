@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
+  <header class="page-header-small" role="banner">
+    {{ site.title }}
+    <a href="{{ site.github.url }}" class="btn">Github</a>
+  </header>
     <main id="content" class="main-content" role="main">
       {{ content }}
 
