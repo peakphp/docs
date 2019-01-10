@@ -1,8 +1,10 @@
 # Quickstart
 
-### Install
+### Install via composer
 
- > $ composer require peak/framework
+```
+$ composer require peak/framework
+```
 
 ### Create an application
 
@@ -70,7 +72,7 @@ try {
 
 ### Output the response
 
-The easiest way to output a *PSR-7* response is to use `Peak\Bedrock\Http\Response\Emitter`.
+The easiest way to output a *PSR-7* response is to use `Peak\Http\Response\Emitter`.
 
 ```php
 $response = $app->handle($request);
