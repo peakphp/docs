@@ -53,8 +53,6 @@ $stack = new Stack([
 
 ```
 
-# Resolve stack with a request
-
 Resolve a http request compatible PSR-7 ``ServerRequestInterface`` with the method ``handle()``
 
 ```php
