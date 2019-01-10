@@ -3,6 +3,8 @@ title: Peak Framework Documentation
 layout: home
 ---
 
+
+
 ## Components
 
  - ``Bedrock`` Application foundation (PSR-7, PSR-11, PSR-15) 
@@ -10,14 +12,14 @@ layout: home
  - ``Collection`` Collections and Structures
  - ``Common`` Generic stuff, tools and utils
  - ``Config`` Dependency Injection Container (PSR-16)
- - [Di](components/di/index) Dependency Injection Container (PSR-11)
- - [Http](components/di/index) Http Foundation (PSR-7, PSR-11, PSR-15)
+ - [Di](di) Dependency Injection Container (PSR-11)
+ - [Http](http) Http Foundation (PSR-7, PSR-11, PSR-15)
  - ``Pipeline`` Pipelines component
  - ``Rbac`` Role-based access control
  - ``Validation`` Validation component
  
 # Resources
- - [GitHub](https://github.com/peakphp/framework)
+ - 
  - [API documentation](http://api.peakframework.com/)
 
 - ##### [Overview](https://github.com/peakphp/docs/blob/master/docs/overview.md)
