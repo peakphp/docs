@@ -2,7 +2,7 @@
 
 ### How to start
 
-$ composer require peak/framework
+ > $ composer require peak/framework
 
 ### How to create an application
 
