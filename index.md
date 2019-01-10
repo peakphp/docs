@@ -1,3 +1,8 @@
+---
+title: Peak Framework Documentation
+layout: home
+---
+
 ## Components
 
  - [Bedrock](components/di/index) Application foundation (PSR-7, PSR-11, PSR-15)
