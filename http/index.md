@@ -1,4 +1,4 @@
-##### < [packages](/index#packages)
+##### < [packages](/docs/index#packages)
 ### Peak/Http
 
 
