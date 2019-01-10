@@ -3,6 +3,10 @@ title: Peak Framework Documentation
 layout: home
 ---
 
+## Resources
+
+ - [Quickstart](quickstart)
+
 ## Packages
 <div id="packages"></div>
 
