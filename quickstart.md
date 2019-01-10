@@ -1,10 +1,10 @@
 # Quickstart
 
-### How to start
+### Install
 
  > $ composer require peak/framework
 
-### How to create an application
+### Create an application
 
 To create an new application instance, you need at least 3 things:
 
@@ -36,7 +36,7 @@ There is two outcomes possible when the main stack is resolved:
 
 <img src="https://raw.githubusercontent.com/peakphp/docs/master/pencils/request_response_flow.png" alt="Peak">
 
-### How to build your stack
+### Build your stack
 
 Adding stuff to your `Application` stack in done with method `stack()` and `set()`.
 They work both the same way except that `stack()` append stuff and  `set()` overwrite what was previously added to the stack.
@@ -50,7 +50,7 @@ $app->stack([
 ```
 If we were processing request here, middlewares A, B and C would have been executed.
 
-### How to process a server request 
+### Process a server request 
 
 To handle an `Application` server request, you need a compatible *PSR-7* library. 
 
@@ -68,7 +68,7 @@ try {
 }
 ```
 
-### How to output the response
+### Output the response
 
 The easiest way to output a *PSR-7* response is to use `Peak\Bedrock\Http\Response\Emitter`.
 
@@ -90,7 +90,6 @@ $app->run($request, new Emitter());
 ### Complete Application example from A to Z
 
 Now that you know how an `Application` works, lets try a more real usage. 
-We will use `ApplicationFactory` to create our app.
 
 ```php
 use Peak\Di\Container; // PSR-11
