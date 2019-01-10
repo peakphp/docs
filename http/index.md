@@ -2,7 +2,8 @@
 ### Peak/Http
 
 
-Http stack represent a pipeline of middlewares designed to handle an http request and/or return a reponse. 
+Http stack represent a pipeline of middlewares designed to handle an http request and/or return a reponse.
+ 
 To work properly, a stack will need a HandlerResolver with a container which may have PSR-11 container to resolve middlewares.
 
 ```php
@@ -30,8 +31,8 @@ $stack = new Stack([
         new Stack([
             MiddlewareAA1::class,
             MiddlewareAA2::class,
-        ]),
-    ]),
+        ], $handlerResolver),
+    ], $handlerResolver),
     MiddlewareB::class,
 ], $handlerResolver);
 
