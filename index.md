@@ -5,24 +5,21 @@ layout: home
 
 ## Components
 
- - [Bedrock](components/di/index) Application foundation (PSR-7, PSR-11, PSR-15)
- - [Blueprint](components/di/index) Interfaces
- - [Collection](components/di/index) Collections
- - [Common](components/di/index) Generic stuff, tools and utils
- - [Config](components/di/index) Dependency Injection Container (PSR-16)
+ - ``Bedrock`` Application foundation (PSR-7, PSR-11, PSR-15) 
+ - ``Blueprint`` Set of interfaces  that define framework packages
+ - ``Collection`` Collections and Structures
+ - ``Common`` Generic stuff, tools and utils
+ - ``Config`` Dependency Injection Container (PSR-16)
  - [Di](components/di/index) Dependency Injection Container (PSR-11)
- - [Http](components/di/index) Http foundation (PSR-7, PSR-11, PSR-15)
- - [Pipeline](components/di/index) Pipelines component
- - [Rbac](components/di/index) Role-based access control
- - [Validation](components/di/index) Validation component
-
+ - [Http](components/di/index) Http Foundation (PSR-7, PSR-11, PSR-15)
+ - ``Pipeline`` Pipelines component
+ - ``Rbac`` Role-based access control
+ - ``Validation`` Validation component
  
 # Resources
  - [GitHub](https://github.com/peakphp/framework)
  - [API documentation](http://api.peakframework.com/)
- 
- 
- 
+
 - ##### [Overview](https://github.com/peakphp/docs/blob/master/docs/overview.md)
     - [How to start](https://github.com/peakphp/docs/blob/master/docs/overview.md#how-to-start)
     - [How it works](https://github.com/peakphp/docs/blob/master/docs/overview.md#how-it-works-)
