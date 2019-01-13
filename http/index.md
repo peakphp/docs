@@ -59,3 +59,5 @@ Resolve a http request compatible PSR-7 ``ServerRequestInterface`` with the meth
 ```php
 $response = $stack->handle($request);
 ```
+
+

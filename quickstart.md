@@ -36,7 +36,7 @@ There is two outcomes possible when the main stack is resolved:
 1. It stop when a *PSR-7* response is returned.
 2. It throw an exception because no response have been returned.
 
-<img src="https://raw.githubusercontent.com/peakphp/docs/master/pencils/request_response_flow.png" alt="Peak">
+<img src="https://raw.githubusercontent.com/peakphp/docs/master/_pencils/request_response_flow.png" alt="Peak">
 
 ### Build your stack
 

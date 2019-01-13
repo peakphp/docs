@@ -10,7 +10,7 @@ layout: home
 
 | Package | Description |
 | --- | --- |
-| Bedrock | Application foundation (PSR-7, PSR-11, PSR-15) |
+| [Bedrock](bedrock) | Application foundation (PSR-7, PSR-11, PSR-15) |
 | Blueprint | Set of interfaces  that define framework packages |
 | Collection | Collections and Structures |
 | Common | Generic stuff, tools and utils |
