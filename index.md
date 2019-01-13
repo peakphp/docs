@@ -14,7 +14,7 @@ layout: home
 | Blueprint | Set of interfaces  that define framework packages |
 | Collection | Collections and Structures |
 | Common | Generic stuff, tools and utils |
-| Config | Configuration loader and manager (PSR-16) |
+| [Config](config) | Configuration loader and manager (PSR-16) |
 | [Di](di) | Dependency Injection Container (PSR-11) |
 | [Http](http) | Http Foundation (PSR-7, PSR-11, PSR-15) |
 | Pipeline | Pipelines package |
