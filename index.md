@@ -3,7 +3,7 @@ title: Peak Framework Documentation
 layout: home
 ---
  - Requirements
- - [Quickstart](quickstart)
+ - [Quick start](quickstart)
 
 ## Packages
 <div id="packages"></div>
@@ -11,7 +11,7 @@ layout: home
 | Package | Description |
 | --- | --- |
 | [Bedrock](bedrock) | Application foundation (PSR-7, PSR-11, PSR-15) |
-| Blueprint | Set of interfaces that define framework packages |
+| [Blueprint](blueprint) | Set of interfaces that define framework packages |
 | [Collection](collection) | Collections and Structures |
 | Common | Generic stuff, tools and utils |
 | [Config](config) | Configuration loader and manager (PSR-16) |
