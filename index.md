@@ -12,7 +12,7 @@ layout: home
 | --- | --- |
 | [Bedrock](bedrock) | Application foundation (PSR-7, PSR-11, PSR-15) |
 | Blueprint | Set of interfaces  that define framework packages |
-| Collection | Collections and Structures |
+| [Collection](collection) | Collections and Structures |
 | Common | Generic stuff, tools and utils |
 | [Config](config) | Configuration loader and manager (PSR-16) |
 | [Di](di) | Dependency Injection Container (PSR-11) |
