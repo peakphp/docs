@@ -13,6 +13,17 @@ table {
   @extend .table;
 }
 
+ul {
+  @extend .nav;
+  @extend .flex-column;
+  li {
+    @extend .nav-item;
+    a {
+      @extend .nav-link;
+    }
+  }
+}
+
 pre.highlight {
   padding: 10px;
 }
