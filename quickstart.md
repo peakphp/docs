@@ -1,4 +1,4 @@
-# Quickstart
+# Quick start
 
 ### Install via composer
 
@@ -26,17 +26,6 @@ $app = new Application(
     ]) 
 )
 ```
-
-### How it works ?
-
-The application is essentially a stack of resources acting as request middlewares and handlers. 
-When a *PSR-7* request is send to the `Application`, the main stack is resolved and executed. 
-
-There is two outcomes possible when the main stack is resolved:
-1. It stop when a *PSR-7* response is returned.
-2. It throw an exception because no response have been returned.
-
-<img src="https://raw.githubusercontent.com/peakphp/docs/master/_pencils/request_response_flow.png" alt="Peak">
 
 ### Build your stack
 
@@ -88,6 +77,19 @@ Or use Application::run()
 ```php
 $app->run($request, new Emitter());
 ```
+
+
+### How it works ?
+
+The application is essentially a stack of resources acting as request middlewares and handlers. 
+When a *PSR-7* request is send to the `Application`, the main stack is resolved and executed. 
+
+There is two outcomes possible when the main stack is resolved:
+1. It stop when a *PSR-7* response is returned.
+2. It throw an exception because no response have been returned.
+
+<img src="https://raw.githubusercontent.com/peakphp/docs/master/_pencils/request_response_flow.png" alt="Peak">
+
 
 ### Complete Application example from A to Z
 
