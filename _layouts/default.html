@@ -35,6 +35,11 @@
 </nav>
 <br><br>
 <div class="container">
+  {% if site.github.is_project_page %}
+  <div class="card bg-light">
+    Current version: 4.0-BETA <code>$ composer require peak/framework</code>
+  </div>
+  {% endif %}
   {{ content }}
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
