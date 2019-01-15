@@ -1,12 +1,16 @@
+<div class="jumbotron">
+
 # Peak/Config
 #### Manage multiple configuration resources like a pro!
-This package help you to manage configurations of various format and source and into one unified configuration collection. 
+This package help you to manage configurations of various format and source and into one unified configuration collection.
 
 ## Installation
 
 ```
 $ composer require peak/config
 ```
+
+</div>
 
 ## Load multiple config resources at once
 ```ConfigFactory``` is the most easiest and direct way to access to all you configuration resources. 
