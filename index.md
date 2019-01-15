@@ -1,6 +1,6 @@
 ---
 title: Peak Framework Documentation
-layout: home
+layout: default
 ---
  - Requirements
  - [Quick start](quickstart)
