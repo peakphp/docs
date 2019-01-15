@@ -1,7 +1,6 @@
 title: Peak Framework
-long_title: Peak Framework Docs
-description: Official Documentation
-test: foobar
+long_title: Official Documentation
+description: Peak Framework Official Documentation
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-cayman
