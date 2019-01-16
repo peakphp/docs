@@ -11,31 +11,32 @@ body {
   background-color: #fafafa;
 }
 
-table {
-  @extend .table;
-}
-
-//ul {
-//  @extend .nav;
-//  @extend .flex-column;
-//  li {
-//    @extend .nav-item;
-//    a {
-//      @extend .nav-link;
-//    }
-//  }
-//}
-
 pre.highlight {
   padding: 10px;
 }
 
-.topbar {
-  //background-color: #300A24 !important;
-  border-bottom: 1px solid #ccc;
-  box-shadow: 0 5px 100px #ccc;
+table {
+  @extend .table;
 }
+
+
+
 
 .container {
   top: 50px;
 }
+
+.topbar {
+  //background-color: #300A24 !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 5px 100px #ccc;
+
+  .logo {
+    position: absolute;
+    top: 0;
+    margin-left: -60px;
+  }
+
+}
+
