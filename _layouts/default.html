@@ -5,7 +5,14 @@
 {% include topbar.html %}
 <br><br>
 <main class="container">
-  {{ content }}
+  <div class="wrapper">
+    <nav class="sidebar">
+      sidebar
+    </nav>
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
 </main>
 {% include footer.html %}
 {% include scripts.html %}

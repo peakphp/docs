@@ -42,7 +42,17 @@ main {
   .logo-title {
     padding-left:60px;
   }
+}
 
 
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  .sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    margin-left: -250px;
+    min-height: 100vh;
+  }
 }
 
