@@ -7,7 +7,7 @@
 <br>
 <main class="wrapper container">
 {% if page.sb %}
-  <nav class="sidebar">{% include footer.html %}</nav>
+  <nav class="sidebar">{% include {{ page.sb }} %}</nav>
 {% endif %}
   <div class="content">
     {{ content }}
