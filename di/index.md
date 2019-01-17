@@ -1,3 +1,7 @@
+---
+sidebar: di.html
+---
+
 ## Peak\Di
 #### PSR-11 Dependency Injection Container
 
