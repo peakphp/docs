@@ -1,22 +1,19 @@
 <!doctype html>
 <html lang="en">
 {% include head.html %}
-<body>
 {% include topbar.html %}
 <br>
 <br>
-{% if page.sb %>
-  <main class="wrapper container">
+<main class="wrapper container">
+  {% if page.sb %>
     <nav class="sidebar">
       {% include {{ page.sb }} %}
     </nav>
-    <div class="content">{{ content }}</div>
-  </main>
-{% else %}
-  <main class="wrapper container">
-    <div class="content">{{ content }}</div>
-  </main>
-{% endif %}
+  {% endif %}
+  <div class="content">
+    {{ content }}
+  </div>
+</main>
 
 {% include footer.html %}
 {% include scripts.html %}
