@@ -1,59 +1,13 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  {% seo %}
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-</head>
+{% include head.html %}
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light fixed-top topbar">
-  <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse bg-white" id="mainNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="/docs">
-            <img src="https://raw.githubusercontent.com/peakphp/art/master/logo-clean-50x50.png" alt="Peak" class="logo"> <span class="logo-title">Peak Framework</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/docs/quickstart">Quick start</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://peakphp.github.io/docs">Documentation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/peakphp/framework">Github</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+{% include topbar.html %}
 <br><br>
 <main class="container">
-  {% if page.id == "home" %}
-  {% endif %}
   {{ content }}
-  <footer class="site-footer">
-    Found a typo? Please let us know or submit a pull request at <a href="https://github.com/peakphp/docs">https://github.com/peakphp/docs</a>
-    <br>
-    {% if site.github.is_project_page %}
-    <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-    {% endif %}
-    <br>
-    <small>build: {{ site.github.build_revision}} {{ site.test }}</small>
-  </footer>
 </main>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+{% include footer.html %}
+{% include scripts.html %}
 </body>
 </html>
