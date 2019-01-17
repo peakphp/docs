@@ -1,3 +1,9 @@
+---
+title: Peak/Di - Introduction
+sb: sidebar/di.html
+---
+
+
 # About Peak/Di
 
 Dependency injection container compatible with [PSR-11](http://www.php-fig.org/psr/psr-11/).

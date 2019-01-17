@@ -1,3 +1,9 @@
+---
+title: Peak/Di - Definitions
+sb: sidebar/di.html
+---
+
+
 ### Definitions (Autowiring disabled)
 
 For small and medium projects, autowiring can do the job correctly, but as your project grow, you may want to have more control over your objects creations.
