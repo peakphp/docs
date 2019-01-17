@@ -1,0 +1,61 @@
+@import "variables";
+@import "rouge-base16-dark";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import "bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fafafa;
+}
+
+pre.highlight {
+  padding: 10px;
+}
+
+table {
+  @extend .table;
+}
+
+main {
+  margin-top: 50px;
+}
+
+/**
+ CLASSES
+ */
+
+.topbar {
+  //background-color: #300A24 !important;
+  background-color: #fff !important;
+  //border-bottom: 1px solid #ccc;
+  box-shadow: 0 5px 100px #ccc;
+  height: 50px;
+
+  .logo {
+    position: absolute;
+    top: 0;
+  }
+
+  .logo-title {
+    padding-left:60px;
+  }
+}
+
+
+$sidebarWidth: 250px;
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  .sidebar {
+    min-width: $sidebarWidth;
+    max-width: $sidebarWidth;
+    min-height: 100vh;
+  }
+  .content {
+    max-width: 1140px - $sidebarWidth;
+  }
+}
+
