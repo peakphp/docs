@@ -3,7 +3,7 @@ title: Peak/Di - Dependency Injection Container
 sidebar_file: sidebar/di.html
 ---
 
-{% include sidebar/di.html %}
+{% include footer.html %}
 
 ## Peak\Di
 #### PSR-11 Dependency Injection Container
