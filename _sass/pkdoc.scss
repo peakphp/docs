@@ -54,7 +54,7 @@ $sidebarWidth: 250px;
     min-height: 100vh;
   }
   .content {
-    max-width: 1140px - $sidebarWidth;
+    max-width: 1140px - ($sidebarWidth + ($grid-gutter-width * 2));
   }
 }
 
