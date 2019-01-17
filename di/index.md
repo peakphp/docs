@@ -1,5 +1,6 @@
 ---
-sidebar: di.html
+sidebar: true
+sidebar_file: di.html
 ---
 
 ## Peak\Di
