@@ -4,15 +4,20 @@
 <body>
 {% include topbar.html %}
 <br><br>
+
 <main class="container">
+  {% if page.sidebar %>
   <div class="wrapper">
     <nav class="sidebar">
-      sidebar
+      {% include sidebar/{{ page.sidebar }} %}
     </nav>
     <div class="content">
       {{ content }}
     </div>
   </div>
+  {% else %}
+      {{ content }}
+  {% endif %}
 </main>
 {% include footer.html %}
 {% include scripts.html %}
