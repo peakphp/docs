@@ -6,7 +6,7 @@
 <br><br>
 
 <main class="wrapper container">
-  {% if page.sidebar or page.sidebar != "" or page.sidebar != nil %>
+  {% if page.sidebar != "" or page.sidebar != nil %>
     <nav class="sidebar">
       {% include {{ page.sidebar }} %}
     </nav>
