@@ -56,5 +56,15 @@ $sidebarWidth: 250px;
   .content {
     max-width: 1140px - ($sidebarWidth + ($grid-gutter-width * 2));
   }
+
+  $breakpoint: map-get($breakpoints, sm);
+  @media {
+    .sidebar {
+      display:none;
+    }
+    .content {
+      max-width: 100%;
+    }
+  }
 }
 
