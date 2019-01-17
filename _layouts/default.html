@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
 {% include head.html %}
+<body>
 {% include topbar.html %}
 <br>
 <br>
 <main class="wrapper container">
-  {% if page.sb %>
-    <nav class="sidebar">sidebar</nav>
-  {% endif %}
+{% if page.sb %>
+  <nav class="sidebar">sidebar</nav>
+{% endif %}
   <div class="content">
     {{ content }}
   </div>
