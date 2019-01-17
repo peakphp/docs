@@ -5,10 +5,18 @@
 {% include topbar.html %}
 <br>
 <br>
-{% if page.sidebar != "" or page.sidebar != nil %>
-  {% include content-with-sidebar.html %}
+{% if page.sidebar %>
+
+<main class="wrapper container">
+  <nav class="sidebar">
+    {% include {{ page.sidebar }} %}
+  </nav>
+  <div class="content">{{ content }}</div>
+</main>
 {% else %}
-  {{ content }}
+  <main class="wrapper container">
+    <div class="content">{{ content }}</div>
+  </main>
 {% endif %}
 
 {% include footer.html %}
