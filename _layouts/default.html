@@ -8,7 +8,7 @@
 <main class="wrapper container">
   {% if page.sidebar %>
     <nav class="sidebar">
-      {% include sidebar/{{ page.sidebar_file }} %}
+      {% include {{ page.sidebar_file }} %}
     </nav>
     <div class="content">
       {{ content }}
