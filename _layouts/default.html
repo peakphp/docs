@@ -3,15 +3,14 @@
 {% include head.html %}
 <body>
 {% include topbar.html %}
-<br><br>
+<br>
+<br>
+{% if page.sidebar != "" or page.sidebar != nil %>
+  {% include content-with-sidebar.html %}
+{% else %}
+  {% include content.html %}
+{% endif %}
 
-<main class="wrapper container">
-  {% if page.sidebar != "" or page.sidebar != nil %>
-    {% include {{ page.sidebar }} %}<div class="content">{{ content }}</div>
-  {% else %}
-    <div class="content">{{ content }}</div>
-  {% endif %}
-</main>
 {% include footer.html %}
 {% include scripts.html %}
 </body>
