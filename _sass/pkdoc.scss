@@ -55,11 +55,12 @@ main {
 }
 
 
-$sidebarWidth: 250px;
+$sidebarWidth: 270px;
 .wrapper {
   display: flex;
   align-items: stretch;
   .sidebar {
+    padding-right:20px;
     min-width: $sidebarWidth;
     max-width: $sidebarWidth;
     min-height: 100vh;
