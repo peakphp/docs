@@ -1,6 +1,6 @@
 ---
-sidebar: true
-sidebar_file: footer.html
+title: Peak/Di - Dependency Injection Container
+sidebar_file: sidebar/di.html
 ---
 
 ## Peak\Di
