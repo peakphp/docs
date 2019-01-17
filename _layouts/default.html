@@ -5,10 +5,10 @@
 {% include topbar.html %}
 <br>
 <br>
-{% if page.sidebar %>
+{% if page.sb %>
   <main class="wrapper container">
     <nav class="sidebar">
-      {% include {{ page.sidebar }} %}
+      {% include {{ page.sb }} %}
     </nav>
     <div class="content">{{ content }}</div>
   </main>
