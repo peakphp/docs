@@ -6,10 +6,11 @@
 <br>
 <br>
 {% if page.sidebar %>
-
 <main class="wrapper container">
   <nav class="sidebar">
+
     {% include {{ page.sidebar }} %}
+
   </nav>
   <div class="content">{{ content }}</div>
 </main>
