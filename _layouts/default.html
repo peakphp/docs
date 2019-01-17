@@ -6,15 +6,14 @@
 <br><br>
 
 <main class="wrapper container">
-  {% if page.sidebar_file %>
-
+  {% if page.sidebar_file != nil %>
+    <nav class="sidebar">
+      {% include {{ page.sidebar_file }} %}
+    </nav>
     <div class="content">
       {{ content }}
     </div>
   {% else %}
-  <nav class="sidebar">
-    {% include {{ page.sidebar_file }} %}
-  </nav>
     <div class="content">
         {{ content }}
     </div>
