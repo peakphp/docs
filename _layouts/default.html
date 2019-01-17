@@ -8,7 +8,7 @@
 {% if page.sidebar != "" or page.sidebar != nil %>
   {% include content-with-sidebar.html %}
 {% else %}
-  {% include content.html %}
+  {{ content }}
 {% endif %}
 
 {% include footer.html %}
