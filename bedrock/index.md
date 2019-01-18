@@ -4,7 +4,7 @@ Create HTTP Application compatible PSR-7, PSR-11 and PSR-15.
 
 Example with Zend\Diactoros: 
 ```php
-use Peak\Bedrock\Application\Application;
+use Peak\Bedrock\Application\Application; // PSR-15
 use Peak\Bedrock\Kernel;
 use Peak\Http\Request\HandlerResolver;
 use Peak\Collection\PropertiesBag;
