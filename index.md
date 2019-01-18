@@ -8,6 +8,8 @@ layout: default
 
 ##### Fast, unopinionated and minimalist web framework based on PHP. 
 
+<br>
+
 It is built around HTTP Request and Middlewares and is fully compatible with PSR-7, PSR-11, PSR-15. Peak is very flexible, efficient, adhere to the Liskov substitution principle so you can use your favorites packagist libraries.
 
  - [Quick start](quickstart)
