@@ -10,9 +10,9 @@ layout: default
 
 Peak is very flexible, efficient, adhere to the Liskov substitution principle so you can use your favorites packagist libraries.
 
- - Requirements
  - [Quick start](quickstart)
-
+ 
+ 
 ## Packages
 <div id="packages"></div>
 
