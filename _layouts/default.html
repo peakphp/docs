@@ -5,8 +5,12 @@
 {% include topbar.html %}
 <br>
 <br>
+<div class="container">
+  <div class="edit float-right">
+    <a href="{{ site.edit_url }}/{{ page.path }}">Edit on github</a>
+  </div>
+</div>
 <main class="wrapper container">
-  <div class="edit float-right"><a href="{{ site.edit_url }}/{{ page.path }}">Edit on github</a></div>
 {% if page.sb %}
   <nav class="sidebar">{% include {{ page.sb }} %}</nav>
 {% endif %}
