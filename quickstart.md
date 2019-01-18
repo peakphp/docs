@@ -16,16 +16,21 @@ To create an new application instance, you need at least 3 things:
  - (optional) A **Dictionary** for properties (*Peak\Blueprint\Collection\Dictionary*)
 
 ```php
-// ex: /public/index.php
+use Peak\Bedrock\Application\Application;
+use Peak\Bedrock\Kernel;
+use Peak\Collection\PropertiesBag;
+use Peak\Di\Container;
+use Peak\Http\Request\HandlerResolver;
+
 $container = new Container();
 $app = new Application(
     new Kernel('prod', $container),
     new HandlerResolver($container),
     new PropertiesBag([ // optional
-        'version' => '1.0', 
+        'version' => '1.0',
         'name' => 'app'
-    ]) 
-)
+    ])
+);
 ```
 
 ### Build your stack
