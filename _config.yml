@@ -4,3 +4,4 @@ description: Official Documentation
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-cayman
+edit_url: https://github.com/peakphp/docs/edit/master/
