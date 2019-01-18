@@ -15,6 +15,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #fafafa;
+  padding-top: 70px;
 }
 
 pre.highlight {
@@ -41,6 +42,10 @@ h1 .small {
   padding-left:0;
 }
 
+.nav .nav {
+  margin-left:8px;
+}
+
 .topbar {
   //background-color: #300A24 !important;
   background-color: #fff !important;
@@ -63,24 +68,22 @@ h1 .small {
   }
 }
 
-
 $sidebarWidth: 270px;
 .wrapper {
   display: flex;
   align-items: stretch;
-  .sidebar {
-    padding-right:20px;
-    min-width: $sidebarWidth;
-    max-width: $sidebarWidth;
-    min-height: 100vh;
-  }
   .content {
     width: 100%;
     img {
       width: 100%;
     }
   }
-
+  .sidebar {
+    padding-right:20px;
+    min-width: $sidebarWidth;
+    max-width: $sidebarWidth;
+    min-height: 100vh;
+  }
   .sidebar + .content {
     max-width: 1140px - ($sidebarWidth + ($grid-gutter-width * 2));
   }
