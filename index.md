@@ -4,7 +4,7 @@ title: Peak Framework Documentation
 layout: default
 ---
 
-<h1>Peak <span class="small">v4.0</small></h1>
+<h1>Peak <span class="small">v4.0</span></h1>
 
 #####Fast, unopinionated and minimalist web framework based on PHP. It is built around HTTP Request and Middlewares and is fully compatible with PSR-7, PSR-11, PSR-15.
 
