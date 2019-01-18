@@ -15,7 +15,9 @@ To create an new application instance, you need at least 3 things:
  - a **Resource resolvers** (*Peak\Blueprint\Common\ResourceResolver*)
  - (optional) A **Dictionary** for properties (*Peak\Blueprint\Collection\Dictionary*)
 
+Example: /public/index.php
 ```php
+// Example: /public/index.php
 $container = new Container();
 $app = new Application(
     new Kernel('prod', $container),
