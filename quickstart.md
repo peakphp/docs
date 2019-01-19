@@ -1,4 +1,5 @@
 ---
+sb: sidebar/quickstart.html
 id: quickstart
 title: Quick Start an app with Peak
 ---
