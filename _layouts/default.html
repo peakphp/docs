@@ -3,16 +3,17 @@
 {% include head.html %}
 <body>
 {% include topbar.html %}
-<div class="container">
-  <div class="edit float-right">
-    <a href="{{ site.edit_url }}/{{ page.path }}"><i class="far fa-edit"></i> Edit on github</a>
-  </div>
-</div>
+
 <main class="wrapper container">
 {% if page.sb %}
   <nav class="sidebar">{% include {{ page.sb }} %}</nav>
 {% endif %}
   <div class="content">
+    <div class="container">
+      <div class="edit float-right">
+        <a href="{{ site.edit_url }}/{{ page.path }}"><i class="far fa-edit"></i> Edit on github</a>
+      </div>
+    </div>
     {{ content }}
     {% include footer.html %}
   </div>
