@@ -1,6 +1,5 @@
 ---
 id: home
-title: Peak Framework Documentation
 layout: default
 ---
 
