@@ -5,7 +5,8 @@ title: Peak Packages (aka. components)
 
 <h2>Packages <span class="small">(aka Components)</span></h2>
 
-Peak Framework comes with 12 packages when using ``$ composer require peak/framework``.
+Peak Framework comes with 12 packages when using ``composer require peak/framework``.
+
 You can also install almost all of them individually via composer.
 
 | Package | Description | Composer |
