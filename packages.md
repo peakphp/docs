@@ -1,6 +1,5 @@
 ---
 id: packages
-layout: default
 title: Peak Packages (aka. components)
 ---
 

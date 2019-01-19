@@ -1,3 +1,8 @@
+---
+id: quickstart
+title: Quick Start an app with Peak
+---
+
 # Quick start
 
 ### Install via composer
