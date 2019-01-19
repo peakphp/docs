@@ -1,5 +1,6 @@
 ---
 id: home
+title:Home
 layout: default
 ---
 
@@ -7,11 +8,11 @@ layout: default
 
 ##### Fast, unopinionated and minimalist web framework based on PHP. 
 <br>
-It is built around HTTP Request and Middlewares and is fully compatible with PSR-7, PSR-11, PSR-15. Peak is very flexible, efficient, adhere to the Liskov substitution principle so you can use your favorites packagist libraries.
+Built around HTTP Request and Middlewares, Peak is fully compatible with PSR-7, PSR-11, PSR-15. It is also very flexible, efficient, adhere to the Liskov substitution principle so you can use your favorites packagist libraries.
 
 <br>
 
- - [Quick start]({{ site.url }}/quickstart)
+ - [Quick start]({{ site.url }}quickstart)
  
  ```
  $ composer require peak/framework
