@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse bg-white">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="/docs">
+                    <a class="nav-link active" href="{{ site.url }}">
                         <img src="https://raw.githubusercontent.com/peakphp/art/master/logo-clean-50x50.png" alt="Peak" class="logo"> <span class="logo-title">Peak</span>
                     </a>
                 </li>
@@ -16,12 +16,17 @@
         <div class="collapse navbar-collapse bg-white justify-content-end" id="mainNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/docs/quickstart">
+                    <a class="nav-link" href="{{ site.url }}">
+                        <i class="fas fa-shipping-fast"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.url }}/quickstart">
                         <i class="fas fa-shipping-fast"></i> Quick start
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://peakphp.github.io/docs/packages">
+                    <a class="nav-link" href="{{ site.url }}/packages">
                         <i class="fas fa-box-open"></i> Packages
                     </a>
                 </li>
