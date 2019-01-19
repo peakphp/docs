@@ -11,7 +11,7 @@ It is built around HTTP Request and Middlewares and is fully compatible with PSR
 
 <br>
 
- - [Quick start](quickstart)
+ - [Quick start]({{ site.url }}/quickstart)
  
  
 
