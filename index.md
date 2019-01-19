@@ -13,6 +13,10 @@ It is built around HTTP Request and Middlewares and is fully compatible with PSR
 
  - [Quick start]({{ site.url }}/quickstart)
  
+ ```
+ $ composer require peak/framework
+ ```
+ 
  
 
 
