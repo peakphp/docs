@@ -93,6 +93,9 @@ $sidebarWidth: 270px;
     min-width: $sidebarWidth;
     max-width: $sidebarWidth;
     min-height: 100vh;
+    li.active {
+      font-weight: bold;
+    }
   }
   .sidebar + .content {
     max-width: 1140px - ($sidebarWidth + ($grid-gutter-width * 2));
