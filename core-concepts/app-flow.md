@@ -5,7 +5,7 @@ sb: sidebar/core-concepts.html
 
 # Application flow
 
-Peak application are Middlewares centric. You can resume the flow like this. A user proceed a HTTP Request, then it is forwarded to your application HTTP stack which resolve it and return a HTTP response whenever possible.
+Peak application are **Middlewares** centric. You can resume the flow like this. A user proceed a HTTP Request, then it is forwarded to your application HTTP stack which resolve it and return a HTTP response whenever possible.
 
 <img src="https://raw.githubusercontent.com/peakphp/docs/master/_pencils/request_response_flow.png" alt="Peak">
 
