@@ -12,9 +12,9 @@ Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7]
 
 <hr>
 
- - Explore [Core Concepts]({{ site.url }}core-concepts/middlewares-and-handlers)
+ - [Core Concepts]({{ site.url }}core-concepts/app-flow)
  - [Quick start]({{ site.url }}quickstart) an application from scratch
- - Explore [Packages list]({{ site.url }}packages)
+ - [Packages list]({{ site.url }}packages)
  - [Contribution guide]({{ site.url }}contribution-guide)
  - [Report and issue](https://github.com/peakphp/framework/issues)
 
