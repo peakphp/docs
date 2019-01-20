@@ -1,3 +1,8 @@
+---
+title: Middlewares and Handlers | Core concepts
+sb: sidebar/middlewares-and-handlers.html
+---
+
 # Middlewares and Handlers
 
 Middlewares and handlers are essentials parts of Peak Applications stack. Their job is to simply receive a request, do stuff and call the next middleware or return a response whenever possible. They are also fully compatible with [PSR-7](https://www.php-fig.org/psr/psr-7/) and [PSR-15](https://www.php-fig.org/psr/psr-15/)
