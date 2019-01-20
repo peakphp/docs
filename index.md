@@ -14,7 +14,14 @@ Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7]
 
  - Explore [Core Concepts]({{ site.url }}core-concepts/middlewares-and-handlers)
  - [Quick start]({{ site.url }}quickstart) an application from scratch
- - 
+ - Explore [Packages]({{ site.url }}packages)
+ - [Contribute]({{ site.url }}contribute)
+ 
+<hr>
+
+{% for repository in site.github.public_repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}
 
 
 
