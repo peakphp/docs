@@ -20,7 +20,9 @@ Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7]
 <hr>
 
 {% for repository in site.github.public_repositories %}
-  * [{{ repository.name }}]({{ repository.html_url }})
+    {% if repository.name == "framework" %}
+        [Latest Release]({{ repository.releases_url }})
+    {% endif %}
 {% endfor %}
 
 
