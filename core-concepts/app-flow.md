@@ -1,4 +1,5 @@
 ---
+id: app-flow
 title: Application flow - Core concepts
 sb: sidebar/core-concepts.html
 ---
