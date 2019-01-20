@@ -1,6 +1,6 @@
 ---
 title: Peak/Di - Basic usage
-sb: di
+sb: sidebar/di.html
 ---
 
 ## Using Autowiring

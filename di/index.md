@@ -1,6 +1,6 @@
 ---
 title: Peak/Di - Dependency Injection Container
-sb: di
+sb: sidebar/di.html
 ---
 
 ## Peak\Di
