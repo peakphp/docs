@@ -1,6 +1,6 @@
 ---
 title: Peak/Di - Definitions
-sb: sidebar/di.html
+sb: di
 ---
 
 

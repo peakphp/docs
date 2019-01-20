@@ -1,6 +1,6 @@
 ---
 title: Peak/Di - Create instance
-sb: sidebar/di.html
+sb: di
 ---
 
 ### How method create() work
