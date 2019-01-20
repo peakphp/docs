@@ -93,7 +93,7 @@ $sidebarWidth: 270px;
     min-width: $sidebarWidth;
     max-width: $sidebarWidth;
     min-height: 100vh;
-    li.active {
+    a.active {
       font-weight: bold;
     }
   }
