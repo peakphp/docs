@@ -10,14 +10,12 @@ layout: default
 <br>
 Built around HTTP Request and Middlewares, Peak is fully compatible with PSR-7, PSR-11, PSR-15. It is also very flexible, efficient, adhere to the Liskov substitution principle so you can use your favorites packagist libraries.
 
-<br>
+<hr>
 
- - [Quick start]({{ site.url }}quickstart)
- 
- ```
- $ composer require peak/framework
- ```
- 
- 
+ - Explore Core Concepts
+ - Quick start an application from scratch
+ - Quick start an application from Peak boilerplate
+ - 
+
 
 
