@@ -11,7 +11,7 @@ You can also install almost all of them individually via composer.
 
 | Package | Description | Composer |
 | --- | --- | --- |
-| Backpack | Implementation of other package to simplify repetitive task | - |
+| Backpack | Various implementation of Peak packages to simplify repetitive task | - |
 | [Bedrock](bedrock) | Application foundation (PSR-7, PSR-11, PSR-15) | [peak/bedrock](https://packagist.org/packages/peak/bedrock) |
 | [Blueprint](blueprint) | Set of interfaces that define framework packages | [peak/blueprint](https://packagist.org/packages/peak/blueprint) |
 | [Collection](collection) | Collections and Structures | [peak/collection](https://packagist.org/packages/peak/collection) |
