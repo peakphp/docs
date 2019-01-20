@@ -1,6 +1,6 @@
 ---
 title: Middlewares and Handlers - Core concepts
-sb: sidebar/middlewares-and-handlers.html
+sb: sidebar/core-concepts.html
 ---
 
 # Middlewares and Handlers
