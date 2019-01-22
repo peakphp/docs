@@ -1,6 +1,6 @@
 ---
 id: home
-title:Home
+title: Home
 layout: default
 ---
 
