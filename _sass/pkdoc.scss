@@ -115,7 +115,7 @@ $sidebarWidth: 270px;
     max-width: 1140px - ($sidebarWidth + ($grid-gutter-width * 2));
   }
 
-  @media (max-width: $sm) {
+  @media (max-width: $md) {
     .sidebar {
       display:none;
     }
