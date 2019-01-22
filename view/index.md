@@ -79,7 +79,7 @@ and in your template view:
 ### Add an helper
 An helper is a standalone object instance. You map a method from your helper to the view. In contrary of macro, helper do not have access to view properties/methods directly and tend to be more maintainable and secure than macro. Helper are ideal for advanced task and can benefit from dependencies injection.
 
-Example of helper class
+Example of an helper class:
 ```php
 class TextUtil
 {
@@ -90,10 +90,10 @@ class TextUtil
 }
 ```
 
-Before you can use it, you'll need to set your view helpers:
+Before you can use it, you'll need to expose ``escape`` method your view helpers:
 ```php
 $view->setHelpers([
-    'espace' => new TextUtil(),
+    'escape' => new TextUtil(),
 ]);
 ```
 
