@@ -8,10 +8,6 @@ PSR-7 Response view template engine with macro and helpers
 $ composer require peak/view
 ```
 
-### Create a Presentation
-
-
-
 ### Create a view
 
 A view need 2 things:
@@ -31,13 +27,7 @@ $data = [
 $view = new View($data, $presentation);
 ```
 
-### Render a view
-
-```php
-$output = $view->render();
-```
-
-### Example of a view template file
+### Example of view templates
 
 layout example:
 ```php
@@ -56,7 +46,7 @@ layout example:
 </html>
 ```
 
-script example:
+script example (represented by ```$this->layoutContent``` in your layout):
 ```php
 <div class="container">
     hello <?php echo $this->name; ?>
@@ -64,7 +54,66 @@ script example:
 ```
 
 
-# Create a complex Presentation 
+
+### Render a view
+
+```php
+$output = $view->render();
+```
+
+### Add a macro
+Macro are closure that will be bind to your view class instance. They have access to all class properties/methods so they must be used carefully. Macro are ideal for small task. 
+
+```php
+$view->addMacro('formatedName', function() {
+    return ucfirst($this->name);
+});
+```
+
+and in your template view:
+```php
+...
+<h1>Hello <?php echo $this->formatedName(); ?></h1>
+```
+
+### Add an helper
+An helper is a standalone object instance. You map a method from your helper to the view. In contrary of macro, helper do not have access to view properties/methods directly and tend to be more maintainable and secure than macro. Helper are ideal for advanced task and can benefit from dependencies injection.
+
+Example of helper class
+```php
+class TextUtil
+{
+    public function escape($text)
+    {
+        return filter_var($text, FILTER_SANITIZE_SPECIAL_CHARS);
+    }
+}
+```
+
+Before you can use it, you'll need to set your view helpers:
+```php
+$view->setHelpers([
+    'espace' => new TextUtil(),
+]);
+```
+
+and finally, you'll be able to use your helper the same way you use macros
+```php
+...
+<h1>Hello <?php echo $this->escape($this->name); ?></h1>
+```
+
+
+Tips: You can also add multiple methods from a single instance:
+```php
+$textUtil = new TextUtil();
+$view->setHelpers([
+    'espace' => $textUtil,
+    'myMethod2' => $textUtil,
+]);
+```
+
+### Create a complex Presentation 
 ```php
 $presentation = new Presentation([
     '/layout1.php' => [
