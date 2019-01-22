@@ -5,7 +5,7 @@ title: Quick Start
 ---
 
 # Start an application from scratch
-This guide assume that your have composer and environment which and run php through browser
+This guide assume that your have composer installed and an environment which and run php through a web browser.
 
 ### Install via composer
 
