@@ -48,8 +48,13 @@ footer {
   padding-left:0;
 }
 
-.nav .nav {
-  margin-left:8px;
+.nav {
+  li {
+    padding:0 10px;
+  }
+  .nav {
+    margin-left: 8px;
+  }
 }
 
 .topbar {
@@ -111,4 +116,5 @@ $sidebarWidth: 270px;
     }
   }
 }
+
 
