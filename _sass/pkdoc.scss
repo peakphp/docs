@@ -102,6 +102,9 @@ $sidebarWidth: 270px;
     a.active {
       font-weight: bold;
     }
+    h2, h3, h4, h5 {
+      margin-top:0;
+    }
   }
   .sidebar + .content {
     max-width: 1140px - ($sidebarWidth + ($grid-gutter-width * 2));
