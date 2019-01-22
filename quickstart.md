@@ -4,8 +4,6 @@ id: quickstart
 title: Quick Start
 ---
 
-# Quick start
-
 ### Install via composer
 
 ```
