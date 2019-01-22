@@ -5,7 +5,7 @@ title: Peak Packages (aka. components)
 
 <h2>Packages <span class="small">(aka Components)</span></h2>
 
-Peak Framework comes different packages. Most of them can be installed and used individually via composer.
+Peak Framework comes with different packages. Most of them can be installed and used individually via composer.
 
 | Package | Description | Composer |
 | --- | --- | --- |
