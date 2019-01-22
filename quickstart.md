@@ -4,6 +4,9 @@ id: quickstart
 title: Quick Start
 ---
 
+# Start an application from scratch
+This guide assume that your have composer and environment which and run php through browser
+
 ### Install via composer
 
 ```
