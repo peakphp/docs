@@ -81,6 +81,9 @@ $sidebarWidth: 270px;
   align-items: stretch;
   .content {
     width: 100%;
+    h1:first-child {
+      margin-top:0;
+    }
     img {
       width: 100%;
     }
