@@ -1,6 +1,6 @@
 # Peak/View
 
-Fast view template engine with macro and helpers.
+Fast and minimalist view template engine with macro and helpers.
 
 ## Installation
 
