@@ -1,6 +1,6 @@
 # Peak/View
 
-PSR-7 Response view template engine with macro and helpers
+Fast view template engine with macro and helpers.
 
 ## Installation
 
