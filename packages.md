@@ -21,3 +21,4 @@ Peak Framework comes with 12 packages. You can also install almost all of them i
 | Pipeline | Pipelines package | [peak/pipeline](https://packagist.org/packages/peak/pipeline) |
 | Rbac | Role-based access control package | - |
 | Validation | Validation package | - |
+| View | Simple PSR-7 Response view template engine | peak/view |
