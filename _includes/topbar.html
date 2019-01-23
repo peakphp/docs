@@ -15,7 +15,7 @@
         </div>
         <div class="collapse navbar-collapse bg-white justify-content-end" id="mainNav">
             <ul class="navbar-nav">
-                {% if page.id == "home" %}<li class="nav-item active">{% else %}<li class="nav-item">{% endif %}
+                <li class='nav-item {% if page.id == "home" %}active{% endif %}'>
                     <a class="nav-link" href="{{ site.url }}">
                         <i class="fas fa-home"></i> Home
                     </a>
