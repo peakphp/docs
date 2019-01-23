@@ -2,7 +2,7 @@
 
 Contains all framework packages interfaces.
 
-{{ small_logo }}
+{{ site.small_logo }}
 
 ### Installation
 
