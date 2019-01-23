@@ -10,6 +10,8 @@ $md: map-get($grid-breakpoints, md);
 $lg: map-get($grid-breakpoints, lg);
 $xl: map-get($grid-breakpoints, xl);
 
+$mainColor: #ff3000;
+
 body {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -19,7 +21,7 @@ body {
 }
 
 a {
-  color: #ff3900;
+  color: $mainColor;
 }
 
 footer {
@@ -85,6 +87,13 @@ table {
   .justify-content-end .navbar-nav .nav-link {
     padding-left: 0.9em;
     padding-right: 0.9em;
+  }
+
+  .nav-item.active {
+    i {
+      color: $mainColor;
+      box-shadow:0 0 2px #ccc;
+    }
   }
 
   @media (min-width: $sm + 1) and (max-width: $md) {
