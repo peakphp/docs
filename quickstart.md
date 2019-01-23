@@ -97,6 +97,9 @@ There is two outcomes possible when the main stack is resolved:
 ### Quick start Summary
 
 ```php
+<?php
+    require __DIR__ . '/vendor/autoload.php';
+    
     use Peak\Bedrock\Application\Application;
     use Peak\Bedrock\Kernel;
     use Peak\Collection\PropertiesBag;
