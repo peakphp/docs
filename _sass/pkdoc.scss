@@ -48,6 +48,10 @@ table {
  CLASSES
  */
 
+.fixed-top {
+  position: absolute;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link:first-child {
   padding-left:0;
 }
