@@ -40,41 +40,39 @@ $app = new Application(
 );
 ```
 
-### Build your stack
-
-Adding stuff to your `Application` stack in done with method `stack()` and `set()`.
-They work both the same way except that `stack()` append stuff and  `set()` overwrite what was previously added to the stack.
+### Add route
 
 ```php
-$app->stack(MiddlewareA::class);
-$app->stack([
-    MiddlewareB::class, 
-    MiddlewareC::class
-]);
+$app
+    ->get('/', function() {
+        return new TextResponse('Climb!');
+    })
+    ->stack(function() {
+        return new TextResponse('Not Found', 404);
+    });
 ```
-If we were processing request here, middlewares A, B and C would have been executed.
 
-### Process a server request 
+### Process a server request and output a response
 
 To handle an `Application` server request, you need a compatible *PSR-7* library. 
 
-By default, Peak come with Zend/Diactoros, but you can use many others.
+Popular ones:
+ - [guzzlehttp/psr7](https://packagist.org/packages/guzzlehttp/psr7)
+ - [zendframework/zend-diactoros](https://packagist.org/packages/zendframework/zend-diactoros)
 
 Example with Zend/Diactoros:
 ```php
-$request = ServerRequestFactory::fromGlobals();
-
-try {
-    $response = $app->handle($request);
-    // ...
-} catch(Exception $e) {
-    // ...
-}
+    try {
+        $request = ServerRequestFactory::fromGlobals();
+        $app->run($request, new Emitter());
+    } catch(Exception $e) {
+        // do something
+    }
 ```
 
-### Output the response
+### Handle the response
 
-The easiest way to output a *PSR-7* response is to use `Peak\Http\Response\Emitter`.
+You may want to do additionnal processing over the response before sending out to the client. It possible to do so by using ``handler()`` method instead of ``run()``
 
 ```php
 $response = $app->handle($request);
@@ -84,13 +82,6 @@ $response = $app->handle($request);
 $emitter = new Emitter();
 $emitter->emit($response);
 ```
-
-Or use Application::run()
-
-```php
-$app->run($request, new Emitter());
-```
-
 
 ### How it works ?
 
@@ -103,53 +94,41 @@ There is two outcomes possible when the main stack is resolved:
 
 <img src="https://raw.githubusercontent.com/peakphp/docs/master/_pencils/request_response_flow.png" alt="Peak">
 
-
-### Complete Application example from A to Z
-
-Now that you know how an `Application` works, lets try a more real usage. 
+### Quick start Summary
 
 ```php
-use Peak\Di\Container; // PSR-11
-use Peak\Bedrock\Application\Application; // PSR-15
-use Peak\Bedrock\Http\Response\Emitter;
-use Zend\Diactoros\ServerRequestFactory; // PSR-7
+    use Peak\Bedrock\Application\Application;
+    use Peak\Bedrock\Kernel;
+    use Peak\Collection\PropertiesBag;
+    use Peak\Di\Container;
+    use Peak\Http\Request\HandlerResolver;
+    use Peak\Http\Response\Emitter;
+    use Zend\Diactoros\Response\TextResponse;
+    use Zend\Diactoros\ServerRequestFactory;
 
-try {
-
+    $container = new Container();
     $app = new Application(
-        new Kernel('prod', new Container()),
-        new HandlerResolver(),
+        new Kernel('prod', $container),
+        new HandlerResolver($container),
         new PropertiesBag([ // optional
-            'version' => '1.0', 
+            'version' => '1.0',
             'name' => 'app'
-        ]) 
-    )
-    
-    $app->all('/', [
-        HomePageHandler::class
-    ]);
-    
-    $app->get('/user/([a-zA-Z0-9]+)', UserProfileHandler::class);
-    
-    $app->post('/userForm/([a-zA-Z0-9]+)', [
-        AuthenticationMiddleware::class,
-        CSRFTokenMiddleware::class,
-        UserFormHandler::class,
-    ]);
-    
-    $app->stack(PageNotFoundHandler::class);
+        ])
+    );
+    $app
+        ->get('/', function() {
+            return new TextResponse('Climb!');
+        })
+        ->stack(function() {
+            return new TextResponse('Not Found', 404);
+        });
 
-    // create request from globals
-    $request = ServerRequestFactory::fromGlobals();
-    
-    // handle request and emit app stack response
-    $app->run($request, new Emitter());
-    
-} catch(Exception $e) {
-    // overwrite app stack with error middleware
-    $app->set(new DevExceptionHandler($e))
-        ->run($request ?? ServerRequestFactory::fromGlobals(), new Emitter());
-}
+    try {
+        $request = ServerRequestFactory::fromGlobals();
+        $app->run($request, new Emitter());
+    } catch(Exception $e) {
+        echo $e->getMessage();
+    }
 ```
     
 
