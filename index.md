@@ -4,7 +4,7 @@ title: Home
 layout: default
 ---
 
-<h1>Peak <span class="small">v4.0-beta</span></h1>
+<h1>Peak <small>v4.0-beta</small></h1>
 
 ##### Fast, unopinionated and minimalist web framework based on PHP. 
 <br>
