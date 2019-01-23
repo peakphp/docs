@@ -8,7 +8,8 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" href="{{ site.url }}">
-                        <img src="https://raw.githubusercontent.com/peakphp/art/master/logo-clean-50x50.png" alt="Peak" class="logo"> <span class="logo-title">Peak</span>
+                        <img src="https://raw.githubusercontent.com/peakphp/art/master/logo-clean-50x50.png" alt="Peak" class="logo">
+                        {% if page.id != "home" %}<span class="logo-title">Peak</span>{% endif %}
                     </a>
                 </li>
             </ul>
