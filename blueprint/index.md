@@ -2,6 +2,8 @@
 
 Contains all framework packages interfaces.
 
+{{ small_logo }}
+
 ### Installation
 
 ```

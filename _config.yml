@@ -6,3 +6,4 @@ google_analytics:
 theme: jekyll-theme-cayman
 url: https://peakphp.github.io/docs/
 edit_url: https://github.com/peakphp/docs/edit/master/
+small_logo: <img src="https://raw.githubusercontent.com/peakphp/art/master/logo-clean-50x50.png" alt="Peak">
