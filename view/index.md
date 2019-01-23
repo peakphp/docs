@@ -35,12 +35,12 @@ layout example:
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title><?php echo $this->title; ?></title>
+    <title><?= $this->title ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <main>
-        <?php echo $this->layoutContent; ?>
+        <?= $this->layoutContent ?>
     </main>
 </body>
 </html>
@@ -49,7 +49,7 @@ layout example:
 script example (represented by ```$this->layoutContent``` in your layout):
 ```php
 <div class="container">
-    hello <?php echo $this->name; ?>
+    hello <?= $this->name ?>
 </div>
 ```
 
@@ -73,7 +73,7 @@ $view->addMacro('formatedName', function() {
 and in your template view:
 ```php
 ...
-<h1>Hello <?php echo $this->formatedName(); ?></h1>
+<h1>Hello <?= $this->formatedName() ?></h1>
 ```
 
 ### Add an helper
@@ -100,7 +100,7 @@ $view->setHelpers([
 and finally, you'll be able to use your helper the same way you use macros
 ```php
 ...
-<h1>Hello <?php echo $this->escape($this->name); ?></h1>
+<h1>Hello <?= $this->escape($this->name) ?></h1>
 ```
 
 
