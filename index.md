@@ -16,7 +16,7 @@ Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7]
         <a href="{{ site.url }}quickstart"><i class="fas fa-shipping-fast"></i> Quick Start from scratch</a>
     </li>
     <li>
-        <a href="{{ site.url }}peak-app-project">Quick Start from Peak Application Project</a>
+        <a href="{{ site.url }}peak-app-project"><i class="fas fa-jet"></i>Quick Start from Peak Application Project</a>
     </li>
     <li>
         <a href="{{ site.url }}core-concepts/app-flow"><i class="fas fa-directions"></i> Core Concepts</a>
