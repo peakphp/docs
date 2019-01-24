@@ -3,7 +3,7 @@ id: view
 title: View Package
 ---
 
-{% include breadcrumb3.html base_url=site.url url_1="" text_1="Home" url_2="packages" text_2="Packages" text_3="View Package" %}
+{% include breadcrumb3.html base_url=site.url url_1="" text_1="Home" url_2="packages" text_2="Packages" text_3="View" %}
 
 
 # Peak/View
