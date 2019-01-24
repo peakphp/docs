@@ -1,3 +1,8 @@
+---
+id: peak-app-project
+title: Peak Application Project
+---
+
 # Peak Application Project
 
 ### Install via composer
