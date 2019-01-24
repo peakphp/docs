@@ -22,7 +22,7 @@ class ClimbMiddleware implements MiddlewareInterface
      */
     public function process(Request $request, Handler $handler): Response 
     {
-        // ...
+        // call the next
         return $handler->handle($request);
         // or 
         return new Response('Hello mountains!');
