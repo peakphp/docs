@@ -15,29 +15,33 @@ Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7]
 <div class="row">
 <div class="col-sm">
     
-- [Quick Start]({{ site.url }}quickstart)
-- [Core Concepts]({{ site.url }}core-concepts/app-flow)
-- [Packages list]({{ site.url }}packages)
-- [Contribution guide]({{ site.url }}contribution-guide)
-- [Report and issue](https://github.com/peakphp/framework/issues)
+<ul>
+    <li><a href="{{ site.url }}quickstart">Quick Start</a></li>
+    <li><a href="{{ site.url }}core-concepts/app-flow">Core Concepts</a></li>
+    <li><a href="{{ site.url }}packages">Packages list</a></li>
+    <li><a href="{{ site.url }}contribution-guide">Contribution guide</a></li>
+    <li><a href="https://github.com/peakphp/framework/issues">Report and issue</a></li>
+</ul>
         
 </div>
 <div class="col-sm">
 
 Packages:
-- Backpack
-- [Bedrock](bedrock)
-- [Blueprint](blueprint)
-- [Collection](collection)
-- Common
-- [Config](config)
-- DebugBar
-- [Di](di)
-- [Http](http)
-- Pipeline
-- Rbac
-- Validation
-- [View](view)
+<ul>
+    <li><a href="{{ site.url }}">Backpack</a></li>
+    <li><a href="{{ site.url }}bedrock">Bedrock</a></li>
+    <li><a href="{{ site.url }}blueprint">Blueprint</a></li>
+    <li><a href="{{ site.url }}collection">Collection</a></li>
+    <li><a href="{{ site.url }}">Common</a></li>
+    <li><a href="{{ site.url }}config">Config</a></li>
+    <li><a href="{{ site.url }}">DebugBar</a></li>
+    <li><a href="{{ site.url }}di">Di</a></li>
+    <li><a href="{{ site.url }}http">Http</a></li>
+    <li><a href="{{ site.url }}">Pipeline</a></li>
+    <li><a href="{{ site.url }}">Rbac</a></li>
+    <li><a href="{{ site.url }}">Validation</a></li>
+    <li><a href="{{ site.url }}view">View</a></li>
+</ul>
         
 </div>
 </div>
