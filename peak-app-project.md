@@ -3,6 +3,8 @@ id: peak-app-project
 title: Peak Application Project
 ---
 
+{% include breadcrumb2.html base_url=site.url url_1="" text_1="Home" text_2="Peak Application Project" %}
+
 # Peak Application Project
 
 This is the default opinionated implementation of the peak framework that comes with session, configuration , routing, debugbar, phpunit, folder structure and use [zendframework/zend-diactoros](https://packagist.org/packages/zendframework/zend-diactoros) as PSR-7 library.

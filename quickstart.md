@@ -4,6 +4,8 @@ id: quickstart
 title: Quick Start
 ---
 
+{% include breadcrumb2.html base_url=site.url url_1="" text_1="Home" text_2="Quick Start" %}
+
 # Start an application from scratch
 This guide assume that your have composer installed and an environment which can run php through a web browser.
 
