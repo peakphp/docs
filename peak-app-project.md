@@ -5,9 +5,11 @@ title: Peak Application Project
 
 # Peak Application Project
 
-### Quick start with Docker
+This is the default opiniated implementation of the peak framework that comes with session, configuration , routing, debugbar, phpunit, folder structure and use [zendframework/zend-diactoros](https://packagist.org/packages/zendframework/zend-diactoros) as PSR-7 library.
 
-This project comes with a Docker configurations to help you start fast. What's included :
+### Docker support
+
+This project also comes with a Docker configurations to help you start fast. What's included :
 
 - PHP 7.3
 - Nginx latest
