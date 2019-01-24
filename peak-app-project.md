@@ -5,12 +5,6 @@ title: Peak Application Project
 
 # Peak Application Project
 
-### Install via composer
-
-```
-$ composer create-project peak/peak --prefer-dist
-```
-
 ### Quick start with Docker
 
 This project comes with a Docker configurations to help you start fast. What's included :
@@ -20,6 +14,14 @@ This project comes with a Docker configurations to help you start fast. What's i
 - MYSQL 8
 - Redis latest
 - And a bunch of tools like composer and database migration
+
+### Install via composer
+
+```
+$ composer create-project peak/peak --prefer-dist
+```
+
+
 
 ##### How to use it ?
 
