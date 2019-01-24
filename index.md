@@ -25,4 +25,3 @@ Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7]
         <a href="{{ site.url }}contributing"><i class="fas fa-hands-helping"></i> Contribution guide</a>
     </li>
 </ul>
-
