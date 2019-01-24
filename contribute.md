@@ -1,3 +1,7 @@
+---
+id: contributing
+title: Contributing
+---
 # Contributing
 Peak is an open source and everyone is welcome to contribute.
  
