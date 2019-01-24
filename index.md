@@ -11,7 +11,8 @@ layout: default
 Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7](https://www.php-fig.org/psr/psr-7/), [PSR-11](https://www.php-fig.org/psr/psr-11/) and [PSR-15](https://www.php-fig.org/psr/psr-15/). It is also very flexible, efficient, adhere to the Liskov substitution principle so you can use your favorites packagist libraries.
 
 <hr>
-<ul>
+
+<ul class="nav flex-column">
     <li>
         <a href="{{ site.url }}quickstart"><i class="fas fa-shipping-fast"></i> Quick Start from scratch</a>
     </li>

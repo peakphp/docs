@@ -24,4 +24,4 @@ Don't submit pull request directly to [READ ONLY] Subtree split packages reposit
  
 ### Review pull request
  
-Be constructive Before you begin, remember that you are looking at the result of someone else's hard work. A good review comment thanks the contributor for their work, identifies what was done well, identifies what should be improved and suggests a next step.
+Be constructive. Remember that you are looking at the result of someone else's hard work. A good review comment thanks the contributor for their work, identifies what was done well, identifies what should be improved and suggests a next step.
