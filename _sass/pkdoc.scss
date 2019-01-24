@@ -94,9 +94,11 @@ table {
   .logo-title {
     padding-left:60px !important;
     font-size: 125%;
+    position: relative;
     .logo {
       position: absolute;
       top: 0;
+      left: 0;
       opacity: 0.1;
       transition: all ease-out 0.2s;
     }
