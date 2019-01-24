@@ -91,20 +91,19 @@ table {
   box-shadow: 0 5px 100px #ccc;
   height: 50px;
 
-  .logo {
-    position: absolute;
-    top: 0;
-    opacity: 0.1;
-    transition: all ease-out 0.2s;
-    &:hover {
-      opacity: 1;
-      transition: all ease-in 0.2s;
-    }
-  }
-
   .logo-title {
     padding-left:60px;
     font-size: 125%;
+    .logo {
+      position: absolute;
+      top: 0;
+      opacity: 0.1;
+      transition: all ease-out 0.2s;
+      &:hover {
+        opacity: 1;
+        transition: all ease-in 0.2s;
+      }
+    }
   }
 
   .justify-content-end .navbar-nav .nav-link {
