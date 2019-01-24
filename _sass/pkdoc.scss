@@ -99,10 +99,10 @@ table {
       top: 0;
       opacity: 0.1;
       transition: all ease-out 0.2s;
-      &:hover {
-        opacity: 1;
-        transition: all ease-in 0.2s;
-      }
+    }
+    &:hover .logo {
+      opacity: 1;
+      transition: all ease-in 0.2s;
     }
   }
 
