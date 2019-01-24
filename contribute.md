@@ -3,7 +3,7 @@ id: contributing
 title: Contributing
 ---
 
-{% include breadcrumb2.html link_1="" link_text_1="Home" link_text_2="Contributing" %}
+{% include breadcrumb2.html base_url=site.url url_1="" text_1="Home" text_2="Contributing" %}
 
 # Contributing
 Peak is an open source and everyone is welcome to contribute.

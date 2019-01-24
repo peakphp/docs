@@ -3,7 +3,7 @@ id: packages
 title: Peak Packages (aka. components)
 ---
 
-{% include breadcrumb2.html link_1=site.url link_text_1="Home" link_text_2="Packages" %}
+{% include breadcrumb2.html base_url=site.url url_1="" text_1="Home" text_2="Packages" %}
 
 <h2>Packages <span class="small">(aka Components)</span></h2>
 
