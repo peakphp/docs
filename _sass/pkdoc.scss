@@ -95,6 +95,11 @@ table {
     position: absolute;
     top: 0;
     opacity: 0.1;
+    transition: all ease-in 0.2s;
+    &:hover {
+      opacity: 1;
+      transition: all ease-in 0.2s;
+    }
   }
 
   .logo-title {
