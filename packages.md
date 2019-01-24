@@ -3,6 +3,8 @@ id: packages
 title: Peak Packages (aka. components)
 ---
 
+{% include breadcrumb2.html link_1=site.url link_text_1="Home" link_text_2="Packages" %}
+
 <h2>Packages <span class="small">(aka Components)</span></h2>
 
 Peak Framework comes with different packages. Most of them can be installed and used individually via composer.
