@@ -22,6 +22,6 @@ Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7]
         <a href="{{ site.url }}packages"><i class="fas fa-box-open"></i> Packages list</a>
     </li>
     <li>
-        <a href="{{ site.url }}contributing"><i class="fas fa-hands-helping"></i> Contribution guide</a>
+        <a href="{{ site.url }}contribute"><i class="fas fa-hands-helping"></i> Contribution guide</a>
     </li>
 </ul>
