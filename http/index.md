@@ -1,6 +1,6 @@
-##### < [packages](/docs/index#packages)
-### Peak/Http
+{% include breadcrumb3.html base_url=site.url url_1="" text_1="Home" url_2="packages" text_2="Packages" text_3="Http" %}
 
+### Peak/Http
 
 Http stack represent a pipeline of middlewares designed to handle an http request and/or return a reponse.
  
