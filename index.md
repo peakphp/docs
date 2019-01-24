@@ -11,44 +11,18 @@ layout: default
 Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7](https://www.php-fig.org/psr/psr-7/), [PSR-11](https://www.php-fig.org/psr/psr-11/) and [PSR-15](https://www.php-fig.org/psr/psr-15/). It is also very flexible, efficient, adhere to the Liskov substitution principle so you can use your favorites packagist libraries.
 
 <hr>
-
-<div class="row">
-<div class="col-sm">
-    
 <ul>
-    <li><a href="{{ site.url }}quickstart">Quick Start</a></li>
-    <li><a href="{{ site.url }}core-concepts/app-flow">Core Concepts</a></li>
-    <li><a href="{{ site.url }}packages">Packages list</a></li>
-    <li><a href="{{ site.url }}contribution-guide">Contribution guide</a></li>
-    <li><a href="https://github.com/peakphp/framework/issues">Report and issue</a></li>
+    <li>
+        <a href="{{ site.url }}quickstart"><i class="fas fa-shipping-fast"></i> Quick Start</a>
+    </li>
+    <li>
+        <a href="{{ site.url }}core-concepts/app-flow"><i class="fas fa-directions"></i> Core Concepts</a>
+    </li>
+    <li>
+        <a href="{{ site.url }}packages"><i class="fas fa-box-open"></i> Packages list</a>
+    </li>
+    <li>
+        <a href="{{ site.url }}contribution-guide"><i class="fas fa-hands-helping"></i> Contribution guide</a>
+    </li>
 </ul>
-        
-</div>
-<div class="col-sm">
-
-Packages:
-<ul>
-    <li><a href="{{ site.url }}">Backpack</a></li>
-    <li><a href="{{ site.url }}bedrock">Bedrock</a></li>
-    <li><a href="{{ site.url }}blueprint">Blueprint</a></li>
-    <li><a href="{{ site.url }}collection">Collection</a></li>
-    <li><a href="{{ site.url }}">Common</a></li>
-    <li><a href="{{ site.url }}config">Config</a></li>
-    <li><a href="{{ site.url }}">DebugBar</a></li>
-    <li><a href="{{ site.url }}di">Di</a></li>
-    <li><a href="{{ site.url }}http">Http</a></li>
-    <li><a href="{{ site.url }}">Pipeline</a></li>
-    <li><a href="{{ site.url }}">Rbac</a></li>
-    <li><a href="{{ site.url }}">Validation</a></li>
-    <li><a href="{{ site.url }}view">View</a></li>
-</ul>
-        
-</div>
-</div>
-
- 
- 
-
-
-
 
