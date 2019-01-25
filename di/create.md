@@ -1,11 +1,12 @@
 ---
-title: Peak/Di - Create instance
+title: Peak/Di - Retrieve/Create instance
 sb: sidebar/di.html
 ---
 
 ### How method create() work
-The method create() will help you to instantiate objects. It is important to understand that enabling/disabling autowiring affect how this method create objects.
-Autowiring is enabled by default. To change this, use ```disableAutowiring()```.
+The method create() will help you to instantiate objects. It is important to understand that **enabling/disabling autowiring affect how this method create objects.
+
+Autowiring is enabled by default. To change this, use ```disableAutowiring()```. 
 
 Under the hood, ```create()``` go through those steps in order:
 
@@ -18,7 +19,21 @@ When Autowiring is enabled :
 When Autowiring is disabled:
 
 * Check for ```$explicit``` definition(s) to overload/guide the resolver.
-* If no ```$explicit```, look for a matching definition and resolve it.
+* If no ```$explicit```, look for a matching [definition]({{ site.url }}di/definitions) and resolve it.
+
+
+### method get() is also used by create() when autowiring is enabled
+
+```
+$foo1 = $container->get(Foo::class);
+$foo2 = $container->create(Foo::class);
+```
+
+In the example above, if your container don't have a stored instance of Foo class, both methods get() and create() will return a new instance of Foo each time. But, if your container have a Foo instance stored, only method create() return a new instance of Foo each time.
+
+In other word, when autowiring is enabled, create() always return a new instance and get() only create a new instance if no stored instance match.
+
+
 
 
 #### Parameters

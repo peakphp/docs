@@ -53,7 +53,7 @@ echo $foo2->bar->name; //output: John Bar
 
 ### Verify a stored class instance
 
-You can check if the container has particular stored class instance
+You can check if the container has particular stored class instance. 
 
 ```php
 if ($container->has(Monolog\Logger::class)) {
@@ -65,19 +65,20 @@ if ($container->has(Monolog\Logger::class)) {
 
 
 ```php
-// when adding (shorter)
-$container->add(new Monolog\Handler\StreamHandler(), 'LogStream');
+// when setting (shorter)
+$container->set(new Monolog\Handler\StreamHandler(), 'LogStream');
 $stream = $container->get('LogStream');
 
 // or with addAlias()
 $container->addAlias(Monolog\Handler\StreamHandler::class, 'LogStream');
-$container->add(new Monolog\Handler\StreamHandler);
+// ...
+$container->set(new Monolog\Handler\StreamHandler);
 $stream = $container->get('LogStream');
 ```
 
 ### Call an class instance method
 
-You can also resolve dependencies of a object method with```call()```. It work like method ```create()``` except for the first parameter which must be an array containing the object instance and the method string name. 
+You can also resolve dependencies of a object method with```call()```.
 
 ```php
 class Foo {
