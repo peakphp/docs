@@ -41,11 +41,11 @@ In other word, when autowiring is enabled, create() always return a new instance
 create(string $class [, array $args = [] [, mixed $explicit = null ]]])
 ```
 
-```$class``` 
+``$class`` 
 
 Represent the class string name you want to create.
 
-```$args```
+``$args``
 
 Represent other(s) non-object parameters if apply (or arguments if you prefer).
 
