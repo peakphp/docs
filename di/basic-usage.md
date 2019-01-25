@@ -17,24 +17,30 @@ class Foo {
 }
 
 $container = new Container;
-$foo = $container->create(Foo::class);
+$foo = $container->get(Foo::class);
 ```
 In example above, a new ``Bar`` instance is created automatically each time ```Foo``` is created. This mechanism rely on ```Reflection``` to resolve objects dependencies. This is the default behavior of Peak Di.
+
+### Get a stored class instance
+
+You can get a stored class instance by using ```get()```.
+
+```php
+$container->set(new Monolog\Logger);
+$logger = $container->get(Monolog\Logger::class);
+```
 
 
 ### Reuse a class instance
 
 By default, method create() will always look for stored instance of Bar before creating a new one.
-You can store an class instance in the container with ```add()```.
+You can store an class instance in the container with ```set()```.
 
 ```php
-$bar = new Bar();
-$bar->name = "John Bar";
+$container->set(new ClimbingSession());
 
-$container->add($bar);
-
-$foo1 = $container->create(Foo::class);
-$foo2 = $container->create(Foo::class);
+$foo1 = $container->get(ClimbingSession::class);
+$foo2 = $container->get(ClimbingSession::class);
 ```
 
 In example above, ```$foo1``` and ```$foo2``` will have the same instance of ```Bar```.
@@ -44,14 +50,6 @@ echo $foo1->bar->name; //output: John Bar
 echo $foo2->bar->name; //output: John Bar
 ```
 
-### Get a stored class instance
-
-You can get a stored class instance by using ```get()```.
-
-```php
-$container->add(new Monolog\Logger);
-$logger = $container->get(Monolog\Logger::class);
-```
 
 ### Verify a stored class instance
 
@@ -83,14 +81,13 @@ You can also resolve dependencies of a object method with```call()```. It work l
 
 ```php
 class Foo {
-    public function add(Bar $bar, $alias) {
-        return $bar;
+    public function method(Bar $bar, $arg) {
+        // ...
+        return 'ok';
     }
 }
 
 $foo = new Foo;
-$bar = $container->call([
-    $foo,
-    'add'
-]);
+$response = $container->call([ $foo, 'method' ], 123);
+echo $response; // output 'ok'
 ```
