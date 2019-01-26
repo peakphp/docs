@@ -16,7 +16,7 @@ This component allows you to standardize and centralize the way objects are cons
 $ composer require peak/di
 ```
 
-## Getting started creating object
+## Getting started
 ```php
 $foo = $container->get(Foo::class);
 ```
