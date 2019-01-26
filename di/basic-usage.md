@@ -3,6 +3,8 @@ title: Peak/Di - Basic usage
 sb: sidebar/di.html
 ---
 
+{% include breadcrumb3.html base_url=site.url url_1="" text_1="Home" url_2="packages" text_2="Packages" text_3="Dependency Injection" %}
+
 ## Using Autowiring
 
 No configuration needed. Just type-hint your constructor parameters and the container can guess which dependencies to inject.
