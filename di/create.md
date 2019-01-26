@@ -3,8 +3,8 @@ title: Peak/Di - Retrieve/Create instance
 sb: sidebar/di.html
 ---
 
-### How method create() work
-The method create() will help you to instantiate objects. It is important to understand that **enabling/disabling autowiring affect how this method create objects.
+### Create object instance
+The method create() will help you to instantiate objects. It is important to understand that **enabling/disabling autowiring** affect how this method create objects.
 
 Autowiring is enabled by default. To change this, use ```disableAutowiring()```. 
 

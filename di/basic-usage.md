@@ -33,7 +33,7 @@ $logger = $container->get(Monolog\Logger::class);
 
 ### Reuse a class instance
 
-By default, method create() will always look for stored instance of Bar before creating a new one.
+By default, method get() will always look for stored instance of Bar before creating a new one.
 You can store an class instance in the container with ```set()```.
 
 ```php
@@ -50,7 +50,6 @@ echo $foo1->bar->name; //output: John Bar
 echo $foo2->bar->name; //output: John Bar
 ```
 
-
 ### Verify a stored class instance
 
 You can check if the container has particular stored class instance. 
@@ -59,6 +58,13 @@ You can check if the container has particular stored class instance.
 if ($container->has(Monolog\Logger::class)) {
     // ...
 }
+```
+
+### Delete a stored class instance
+
+
+```php
+$container->delete(Logger::class);
 ```
 
 ### Use alias for stored class instance
