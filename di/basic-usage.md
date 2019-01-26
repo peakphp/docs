@@ -67,7 +67,7 @@ if ($container->has(Monolog\Logger::class)) {
 $container->delete(Logger::class);
 ```
 
-### Use alias for stored class instance
+### Use aliases for class instance
 
 
 ```php
