@@ -38,11 +38,8 @@ The default singleton definition binding is an object that is first created than
 $container->disableAutowiring();
 
 $container->bind(Foo::class, new Foo);
-$foo = $container->create(Foo::class);
-
-$foo->bar = 'foo';
-
-$other_foo = $container->create(Foo::class);
+$foo = $container->get(Foo::class);
+$other_foo = $container->get(Foo::class);
 // $foo === $other_foo
 ```
 
@@ -62,8 +59,8 @@ $container->bindFactory(Finger::class, function (Container $c, $args) {
 });
 
 // create foo successfully
-$foo = $container->create(Foo::class);
-$foo2 = $container->create(Foo::class);
+$foo = $container->get(Foo::class);
+$foo2 = $container->get(Foo::class);
 // $foo !== $foo2
 ```
 
@@ -96,7 +93,7 @@ $container->bindPrototype(Chest::class, [
     'bar',
 ]);
 
-$chest = $container->create(Chest::class);
+$chest = $container->get(Chest::class);
 // $chest will always contain a new instance of Arm and Arm will 
 // always contains a new instance of Hand and so on. 
 ```
@@ -104,9 +101,9 @@ $chest = $container->create(Chest::class);
 
 ### Array of definition
 
-Array of definition represent a powerfull way to describe and group how dependencies can be resolve for a definition. It also support nested definition.
+Array of definition represent a powerful way to describe and group how dependencies can be resolve for a definition. It also support nested definition.
 
-Supported types supported in an array of definiton: callable, classname string, object and array of definition. 
+Supported types supported in an array of definition: callable, classname string, object and array of definition. 
 
 When using class name string, the first item of the array always represent the class to instantiate, other represent constructor argument(s).
 
@@ -137,7 +134,7 @@ $container->bind(A::class, [
     123  // $id
 ]);
 
-$a = $container->create(A::class);
+$a = $container->get(A::class);
 
 // what php equivalent look like (without stored instance(s))
 $a = new A(
@@ -182,6 +179,6 @@ $container->bind(Database::class, [
 ]);
 
 
-$db = $container->create(Database::class);
+$db = $container->get(Database::class);
 
 ```
