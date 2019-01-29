@@ -10,9 +10,7 @@ title: Quick Start
 This guide assume that your have composer installed and an environment which can run php through a web browser.
 
 <div class="alert alert-info" role="alert">
-
-  Before you go on, you might want try also [peak project]({{ site.url }}peak-app-project) to even start faster.
-  
+  Before you go on, you might want try also <a href="{{ site.url }}peak-app-project">peak project</a> to even start faster.
 </div>
 
 
