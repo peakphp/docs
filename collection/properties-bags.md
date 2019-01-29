@@ -6,7 +6,7 @@ A bag of properties is a simple collection structure with basic tooling for arra
 
 As the name speak for itself, ``ImmutablePropertiesBag`` properties cannot be altered after instance creation and will throw an exception if you try to.
 
-A properties bag implement (Peak\Blueprint\Collection\Dictionary)[https://github.com/peakphp/framework/blob/master/src/Blueprint/Collection/Dictionary.php] and (JsonSerializable)https://php.net/manual/en/class.jsonserializable.php]
+A properties bag implement (Peak\Blueprint\Collection\Dictionary)[https://github.com/peakphp/framework/blob/master/src/Blueprint/Collection/Dictionary.php] and (JsonSerializable)[https://php.net/manual/en/class.jsonserializable.php]
 
 ```php
 $bag = new PropertiesBag([
