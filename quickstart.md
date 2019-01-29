@@ -13,7 +13,10 @@ This guide assume that your have composer installed and an environment which can
   Before you go on, you might want try also <a href="{{ site.url }}peak-app-project">peak project</a> to even start faster.
 </div>
 
-{% include alert.html content="Before you go on, you might want try also" %}
+{% capture alert_content %}
+Before you go on, you might want try also <a href="{{ site.url }}peak-app-project">peak project</a> to even start faster.
+{% endcapture %}
+{% include alert.html content=alert_content %}
 
 
 ### Install via composer
