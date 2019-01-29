@@ -20,7 +20,7 @@ $bag = new PropertiesBag([
 // set
 $bag->set('name', 'j.');
 $bar->name = 'j.';
-$bag['name'];
+$bag['name'] = 'j.';
 
 // get
 $bag->get('name');
