@@ -1,7 +1,7 @@
 <ul>
     <li><a class='{% if page.id == "overview" %}active{% endif %}' href="{{ site.url }}collection">Overview</a></li>
     <li><a class='{% if page.id == "properties-bag" %}active{% endif %}' href="{{ site.url }}collection/properties-bags">Properties Bag</a></li>
-    <li><a class="" href="{{ site.url }}collection/collection">Collection</a></li>
-    <li><a class="" href="{{ site.url }}collection/dotnotation-collection">DotNotation Collection</a></li>
-    <li><a class="" href="{{ site.url }}collection/typed-structure">Typed Structure</a></li>
+    <li><a class='{% if page.id == "collection" %}active{% endif %}' href="{{ site.url }}collection/collection">Collection</a></li>
+    <li><a class='{% if page.id == "dotnotation-collection" %}active{% endif %}' href="{{ site.url }}collection/dotnotation-collection">DotNotation Collection</a></li>
+    <li><a class='{% if page.id == "typed-structure" %}active{% endif %}' href="{{ site.url }}collection/typed-structure">Typed Structure</a></li>
 </ul>
