@@ -10,7 +10,7 @@ title: Quick Start
 This guide assume that your have composer installed and an environment which can run php through a web browser.
 
 {% capture alert_content %}
-Before you go on, you might want try also <a href="{{ site.url }}peak-app-project">peak project</a> to even start faster.
+Before you go on, you might want try <a href="{{ site.url }}peak-app-project">peak project</a> to even start faster.
 {% endcapture %}
 {% include alert.html content=alert_content %}
 
