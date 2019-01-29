@@ -2,7 +2,7 @@
 
 A bag of properties is a simple collection structure with basic tooling for array. It comes in 2 versions: 
 - ``PropertiesBag`` 
-- ``ImmutablePropertiesBag``. 
+- ``ImmutablePropertiesBag``
 
 As the name speak for itself, ``ImmutablePropertiesBag`` properties cannot be altered after instance creation and will throw an exception if you try to.
 
