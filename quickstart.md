@@ -9,15 +9,10 @@ title: Quick Start
 # Start an application from scratch
 This guide assume that your have composer installed and an environment which can run php through a web browser.
 
-<div class="alert alert-info" role="alert">
-  Before you go on, you might want try also <a href="{{ site.url }}peak-app-project">peak project</a> to even start faster.
-</div>
-
 {% capture alert_content %}
 Before you go on, you might want try also <a href="{{ site.url }}peak-app-project">peak project</a> to even start faster.
 {% endcapture %}
-{% include alert.html type="warning" content=alert_content %}
-
+{% include alert.html content=alert_content %}
 
 ### Install via composer
 
