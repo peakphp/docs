@@ -21,6 +21,4 @@ Peak Framework comes with different packages. Most of them can be installed and 
 | **[Di](di)** | Dependency Injection Container (PSR-11) | [peak/di](https://packagist.org/packages/peak/di) |
 | **[Http](http)** | Http Foundation (PSR-7, PSR-11, PSR-15) | [peak/http](https://packagist.org/packages/peak/http) |
 | **Pipeline** | Pipelines package | [peak/pipeline](https://packagist.org/packages/peak/pipeline) |
-| **Rbac** | Role-based access control package | - |
-| **Validation** | Validation package | - |
 | **[View](view)** | View template engine with macro and helpers | [peak/view](https://packagist.org/packages/peak/view) |
