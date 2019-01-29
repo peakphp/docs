@@ -1,4 +1,5 @@
 ---
+id: properties-bag
 title: Peak/Collection - Properties Bags
 sb: sidebar/collection.html
 ---
