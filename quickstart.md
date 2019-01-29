@@ -9,7 +9,12 @@ title: Quick Start
 # Start an application from scratch
 This guide assume that your have composer installed and an environment which can run php through a web browser.
 
-Before you go on, you might want try also [peak project]({{ site.url }}peak-app-project) to even start faster.
+<div class="alert alert-info" role="alert">
+
+  Before you go on, you might want try also [peak project]({{ site.url }}peak-app-project) to even start faster.
+  
+</div>
+
 
 ### Install via composer
 
