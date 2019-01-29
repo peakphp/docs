@@ -4,6 +4,8 @@ title: Peak/Collection - Properties Bags
 sb: sidebar/collection.html
 ---
 
+{% include_relative _header.html %}
+
 # Properties Bags
 
 A bag of properties is a simple collection structure with basic tooling for array. It comes in 2 versions: 
