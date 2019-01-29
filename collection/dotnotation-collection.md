@@ -1,5 +1,4 @@
 ---
-id: dotnotation-collection
 title: Peak/Collection - Dot Notation Collection
 sb: sidebar/collection.html
 ---
