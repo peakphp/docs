@@ -1,3 +1,8 @@
+---
+title: Peak/Collection - Properties Bags
+sb: sidebar/collection.html
+---
+
 # Properties Bags
 
 A bag of properties is a simple collection structure with basic tooling for array. It comes in 2 versions: 
