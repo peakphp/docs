@@ -1,5 +1,4 @@
 ---
-id: typed-structure
 title: Peak/Collection - Typed Structures
 sb: sidebar/collection.html
 ---
