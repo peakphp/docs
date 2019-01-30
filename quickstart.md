@@ -63,11 +63,8 @@ $app
 
 To handle an `Application` server request, you need a compatible *PSR-7* library. 
 
-Popular ones:
- - [guzzlehttp/psr7](https://packagist.org/packages/guzzlehttp/psr7)
- - [zendframework/zend-diactoros](https://packagist.org/packages/zendframework/zend-diactoros)
+We will use [Zend Diactoros](https://packagist.org/packages/zendframework/zend-diactoros) for the example:
 
-Example with Zend/Diactoros:
 ```php
     try {
         $request = ServerRequestFactory::fromGlobals();
