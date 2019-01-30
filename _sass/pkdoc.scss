@@ -109,6 +109,9 @@ table {
       left: 0;
       opacity: 0.1;
       transition: all ease-out 0.2s;
+      &.active {
+        opacity: 0.9;
+      }
     }
     &:hover .logo {
       opacity: 1;
