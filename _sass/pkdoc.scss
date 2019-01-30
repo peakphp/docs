@@ -109,14 +109,12 @@ table {
       left: 0;
       opacity: 0.1;
       transition: all ease-out 0.2s;
-      &.active {
-        opacity: 0.9;
-      }
     }
-    &:hover .logo {
+    &:hover .logo, &.active .logo {
       opacity: 1;
       transition: all ease-in 0.2s;
     }
+
   }
 
   .justify-content-end .navbar-nav .nav-link {
