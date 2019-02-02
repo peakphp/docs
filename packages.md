@@ -17,7 +17,6 @@ Peak Framework comes with different packages. Most of them can be installed and 
 | **[Collection](collection)** | Collections and Structures | [peak/collection](https://packagist.org/packages/peak/collection) |
 | **Common** | Generic stuff, tools and utils | peak/common |
 | **[Config](config)** | Configuration loader and manager (PSR-16) | [peak/config](https://packagist.org/packages/peak/config) |
-| **DebugBar** | Html Debugging tool bar | [peak/debugbar](https://packagist.org/packages/peak/debugbar) |
 | **[Di](di)** | Dependency Injection Container (PSR-11) | [peak/di](https://packagist.org/packages/peak/di) |
 | **[Http](http)** | Http Foundation (PSR-7, PSR-11, PSR-15) | [peak/http](https://packagist.org/packages/peak/http) |
 | **Pipeline** | Pipelines package | [peak/pipeline](https://packagist.org/packages/peak/pipeline) |
