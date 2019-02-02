@@ -28,6 +28,10 @@ a, a:hover, a:active {
 
 code {
   color: $mainColor;
+
+  &.highlighter-rouge {
+    background-color: #ddd;
+  }
 }
 
 footer {
