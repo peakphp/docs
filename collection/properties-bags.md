@@ -25,9 +25,9 @@ $bag = new PropertiesBag([
 #### Set and Get
 ```php
 // set
-$bag->set('name', 'j.');
-$bar->name = 'j.';
-$bag['name'] = 'j.';
+$bag->set('name', 'john');
+$bar->name = 'john';
+$bag['name'] = 'john';
 
 // get
 $bag->get('name');
