@@ -42,7 +42,7 @@ $street = $coll['customer']['address']['street'];
 $street = $coll->customer['address']['street']; 
 ```
  
-With ``DotNotationCollection``, you can simply access to street with ``get()``. By default, if a property doesn't exists, ``null`` is returned. You can change the default by passing a second argument to ``get()`` with the default value you want 
+With ``DotNotationCollection``, you can simply access to street with ``get()`` with dots instead of array brackets. By default, if a property doesn't exists, ``null`` is returned. You can change the default by passing a second argument to ``get()`` with the default value you want 
 ```php
 $street = $coll->get('customer.address.street');
 // with a default value
