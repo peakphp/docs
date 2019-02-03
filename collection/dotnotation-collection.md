@@ -34,14 +34,6 @@ A DotNotation Collection extends [Collection]({{ site.url }}collection/collectio
  ]);
  ```
  
-To access to the customer street with a regular ``Collection``, you have to do something like this:
-
-```php
-$street = $coll['customer']['address']['street'];
-// or
-$street = $coll->customer['address']['street']; 
-```
- 
 With ``DotNotationCollection``, you can simply access to street with ``get()`` with dots instead of array brackets. By default, if a property doesn't exists, ``null`` is returned. You can change the default by passing a second argument to ``get()`` with the default value you want 
 ```php
 $street = $coll->get('customer.address.street');
