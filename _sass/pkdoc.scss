@@ -52,6 +52,10 @@ h1 small {
   font-size:12px;
 }
 
+h5.card-title {
+  margin-top: 10px;
+}
+
 main {
   margin-top: 50px;
 }
@@ -69,9 +73,6 @@ table {
  */
 
 .card-title {
-  h5 {
-    margin-top:10px;
-  }
   .card-logo {
     font-size: 1.2em;
     //position: absolute;
