@@ -7,7 +7,7 @@ title: Peak Application Project
 
 # Peak Application Project
 
-[https://github.com/peakphp/peak](https://github.com/peakphp/peak)
+<i class="fab fa-github"></i> [https://github.com/peakphp/peak](https://github.com/peakphp/peak)
 
 This is the default opinionated implementation of the peak framework that comes with session, configuration , routing, debugbar, phpunit, folder structure and use [zendframework/zend-diactoros](https://packagist.org/packages/zendframework/zend-diactoros) as PSR-7 library.
 
