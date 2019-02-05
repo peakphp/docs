@@ -27,10 +27,11 @@ Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7]
         {% include card.html title=title text=text %}
     </div>
     <div class="col-sm">
+        {% capture title %}<a href="https://www.php-fig.org/psr/psr-11/">PSR-11</a>{% endcapture %}
         {% capture text %}
-        or use any <a href="https://www.php-fig.org/psr/psr-11/">PSR-11</a> dependency injection container of your choice
+        Dependency Injection out the box or you can use any <a href="https://www.php-fig.org/psr/psr-11/">PSR-11</a> dependency injection container of your choice
         {% endcapture %}
-        {% include card.html title="Dependency Injection out of the box" text=text %}
+        {% include card.html title=title text=text %}
     </div>
     <div class="col-sm">
         {% capture text %}
@@ -39,6 +40,8 @@ Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7]
         {% include card.html title="use your favorites packagist libraries" text=text %}
     </div>
 </div>
+
+<br><br>
 
 <ul class="nav flex-column">
     <li>
