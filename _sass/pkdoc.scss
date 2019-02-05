@@ -68,6 +68,15 @@ table {
  CLASSES
  */
 
+.card-title {
+  .card-logo {
+    font-size: 2em;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
+}
+
 .fixed-top {
   position: absolute;
 }
