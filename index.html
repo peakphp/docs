@@ -17,10 +17,11 @@ Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7]
 
 <div class="row">
     <div class="col-sm">
-        {% capture title %}{% endcapture %}
-        {% capture text %}Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7](https://www.php-fig.org/psr/psr-7/),
-        [PSR-11](https://www.php-fig.org/psr/psr-11/) and
-        [PSR-15](https://www.php-fig.org/psr/psr-15/){% endcapture %}
+        {% capture title %}<a href="https://www.php-fig.org/psr/psr-7/">PSR-7</a> and <a href="https://www.php-fig.org/psr/psr-15/">PSR-15</a>{% endcapture %}
+        {% capture text %}
+        Built around HTTP Request and Middlewares, Peak is fully compatible with <a href="https://www.php-fig.org/psr/psr-7/">PSR-7</a>,
+        <a href="https://www.php-fig.org/psr/psr-15/">PSR-15</a>
+        {% endcapture %}
         {% include card.html title=title text=text %}
     </div>
     <div class="col-sm">
