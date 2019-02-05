@@ -7,7 +7,7 @@ sb: sidebar/collection.html
 
 # Typed Structure
 
-Typed structure is an easy to enforce types over an array or class while waiting for PHP 7.4
+Typed structure is an easy to enforce types over an array or class while waiting for PHP 7.4 typed properties.
 
 Here an example:
 
