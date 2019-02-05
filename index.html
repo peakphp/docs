@@ -6,25 +6,55 @@ layout: default
 
 <h1>{{ site.small_logo }} Peak <small><a href="{{ site.latest_release_url }}">{{ site.latest_release }}</a></small></h1>
 
-##### Fast, unopinionated and minimalist web framework based on PHP. 
+<h6>Fast, unopinionated and minimalist web framework based on PHP.</h6>
 <br>
-Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7](https://www.php-fig.org/psr/psr-7/), [PSR-11](https://www.php-fig.org/psr/psr-11/) and [PSR-15](https://www.php-fig.org/psr/psr-15/). It is also very flexible, efficient, adhere to the Liskov substitution principle so you can use your favorites packagist libraries.
+Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7](https://www.php-fig.org/psr/psr-7/),
+[PSR-11](https://www.php-fig.org/psr/psr-11/) and
+[PSR-15](https://www.php-fig.org/psr/psr-15/). It is also very flexible, efficient, adhere to the Liskov substitution principle so you can use your favorites packagist libraries.
 <hr>
+
+
+
+<div class="row">
+    <div class="col-sm">
+        {% capture title %}{% endcapture %}
+        {% capture text %}Built around HTTP Request and Middlewares, Peak is fully compatible with [PSR-7](https://www.php-fig.org/psr/psr-7/),
+        [PSR-11](https://www.php-fig.org/psr/psr-11/) and
+        [PSR-15](https://www.php-fig.org/psr/psr-15/){% endcapture %}
+        {% include cards.html title=title text=text %}
+    </div>
+    <div class="col-sm">
+        One of three columns
+    </div>
+    <div class="col-sm">
+        One of three columns
+    </div>
+</div>
 
 <ul class="nav flex-column">
     <li>
-        <a href="{{ site.url }}quickstart"><i class="fas fa-shipping-fast"></i> Quick Start from scratch</a>
+        <a href="{{ site.url }}quickstart"><i class="fas fa-shipping-fast"></i>
+            Quick Start from scratch
+        </a>
     </li>
     <li>
-        <a href="{{ site.url }}peak-app-project"><i class="fas fa-fighter-jet"></i> Quick Start with Peak Application Project</a>
+        <a href="{{ site.url }}peak-app-project"><i class="fas fa-fighter-jet"></i>
+            Quick Start with Peak Application Project
+        </a>
     </li>
     <li>
-        <a href="{{ site.url }}core-concepts/app-flow"><i class="fas fa-directions"></i> Core Concepts</a>
+        <a href="{{ site.url }}core-concepts/app-flow"><i class="fas fa-directions"></i>
+            Core Concepts
+        </a>
     </li>
     <li>
-        <a href="{{ site.url }}packages"><i class="fas fa-box-open"></i> Packages list</a>
+        <a href="{{ site.url }}packages"><i class="fas fa-box-open"></i>
+            Packages list
+        </a>
     </li>
     <li>
-        <a href="{{ site.url }}contribute"><i class="fas fa-hands-helping"></i> Contribution guide</a>
+        <a href="{{ site.url }}contribute"><i class="fas fa-hands-helping"></i>
+            Contribution guide
+        </a>
     </li>
 </ul>
