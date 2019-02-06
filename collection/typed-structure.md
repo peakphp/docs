@@ -56,7 +56,7 @@ All unspecified properties at the object creation and defined in your structure 
  - ``null()``
  - ``any()``
  
-Call typing can be done with ``object($className)``.
+Class typing can be done with ``object($className)``.
 
 Use ``any()`` only when your not sure of the data you will store on a property.
 
