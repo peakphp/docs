@@ -24,10 +24,10 @@ This project also comes with a Docker configurations to help you start fast. Wha
 ### Install via composer
 
 ```
-$ composer create-project peak/peak --prefer-dist
+$ composer create-project peak/peak -s dev
 ```
 
-
+{% include alert.html type="warning" content="Peak in steal in beta, so you need to specify ``-s dev``" %}
 
 ##### How to use it ?
 
