@@ -27,7 +27,7 @@ This project also comes with a Docker configurations to help you start fast. Wha
 $ composer create-project peak/peak -s dev
 ```
 {% capture alert_content %}
-Peak is still in beta, so you need to specify <code>-s dev</code> option
+Peak is still in beta, so you need to specify <code>-s dev</code> option.
 {% endcapture %}
 {% include alert.html type="warning" content=alert_content %}
 
