@@ -44,14 +44,6 @@ $user->descrition = '...';
 
 All unspecified properties at the object creation and defined in your structure will be set to null or their default, if specified.
 
-#### Multiple types
-
-You can combine multiple types to a single property by chaining them:
-
-```php
-'bar' => $this->string()->array()->null()
-````
-
 #### List of types
 
  - ``integer()``
@@ -67,6 +59,12 @@ You can combine multiple types to a single property by chaining them:
 Call typing can be done with ``object($className)``.
 
 Use ``any()`` only when your not sure of the data you will store on a property.
+
+You can combine multiple types to a single property by chaining them:
+
+```php
+'bar' => $this->string()->array()->null()
+````
  
 #### Setting or updating a property
 
