@@ -90,8 +90,11 @@ table {
   position: absolute;
 }
 
-.highlighter-rouge {
+.highlight {
+  border-radius: 5px;
+  box-shadow: 4px 4px 0px #ccc;
 }
+.highlighter-rouge {}
 
 .navbar {
   padding:0 1rem;
