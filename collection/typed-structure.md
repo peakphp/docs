@@ -39,7 +39,7 @@ $user = new User([
 // or
 $user = new User();
 $user->email = 'foobar@gmail.com';
-$user->descrition = '...';
+$user->description = '...';
 ```
 
 All unspecified properties at the object creation and defined in your structure will be set to null or their default, if specified.
