@@ -30,7 +30,7 @@ To create an new application instance, you need at least 3 things:
  - (optional) A **Dictionary** for properties (*Peak\Blueprint\Collection\Dictionary*)
 
 ```php
-use Peak\Bedrock\Application\Application;
+use sb: sidebar/di.htmllication\Application;
 use Peak\Bedrock\Kernel;
 use Peak\Collection\PropertiesBag;
 use Peak\Di\Container;
@@ -93,7 +93,7 @@ $emitter->emit($response);
 <?php
     require __DIR__ . '/vendor/autoload.php';
     
-    use Peak\Bedrock\Application\Application;
+    use Peak\Bedrock\Http\Application;
     use Peak\Bedrock\Kernel;
     use Peak\Collection\PropertiesBag;
     use Peak\Di\Container;
