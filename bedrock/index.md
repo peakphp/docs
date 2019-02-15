@@ -1,3 +1,10 @@
+---
+title: Peak/Bedrock - Http Application
+sb: sidebar/bedrock.html
+---
+
+{% include_relative _header.html %}
+
 # Peak/Bedrock
 
 Create HTTP Application compatible PSR-7, PSR-11 and PSR-15.
