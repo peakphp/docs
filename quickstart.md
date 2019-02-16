@@ -76,7 +76,7 @@ We will use [Zend Diactoros](https://packagist.org/packages/zendframework/zend-d
 
 ### Handle the response
 
-You may want to do additionnal processing over the response before sending out to the client. It possible to do so by using ``handler()`` method instead of ``run()``
+You may want to do additionnal processing over the response before sending out to the client. It possible to do so by using ``handle()`` method instead of ``run()``
 
 ```php
 $response = $app->handle($request);
