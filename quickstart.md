@@ -89,19 +89,22 @@ $emitter->emit($response);
 
 ### Quick start Summary
 
+Here a quick summary of the quick start guide application code look like from top to bottom:
+
 ```php
 <?php
-    require __DIR__ . '/vendor/autoload.php';
-    
-    use Peak\Bedrock\Http\Application;
-    use Peak\Bedrock\Kernel;
-    use Peak\Collection\PropertiesBag;
-    use Peak\Di\Container;
-    use Peak\Http\Request\HandlerResolver;
-    use Peak\Http\Response\Emitter;
-    use Zend\Diactoros\Response\TextResponse;
-    use Zend\Diactoros\ServerRequestFactory;
+require __DIR__ . '/vendor/autoload.php';
 
+use Peak\Bedrock\Http\Application;
+use Peak\Bedrock\Kernel;
+use Peak\Collection\PropertiesBag;
+use Peak\Di\Container;
+use Peak\Http\Request\HandlerResolver;
+use Peak\Http\Response\Emitter;
+use Zend\Diactoros\Response\TextResponse;
+use Zend\Diactoros\ServerRequestFactory;
+
+try {
     $container = new Container();
     $app = new Application(
         new Kernel('prod', $container),
@@ -117,17 +120,12 @@ $emitter->emit($response);
         })
         ->stack(function() {
             return new TextResponse('Not Found', 404);
-        });
-
-    try {
-        $request = ServerRequestFactory::fromGlobals();
-        $app->run($request, new Emitter());
-    } catch(Exception $e) {
-        echo $e->getMessage();
-    }
+        })
+        ->run(
+            ServerRequestFactory::fromGlobals(), 
+            new Emitter()
+        );
+} catch(Exception $e) {
+    echo $e->getMessage();
+}
 ```
-    
-
-
-
-
