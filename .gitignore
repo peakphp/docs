@@ -1,4 +1,6 @@
 .idea
+*.bat
+*.sh
 tmp
 _site
 _sass/jekyll-theme-cayman.css
