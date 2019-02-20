@@ -5,6 +5,8 @@ sb: sidebar/bedrock.html
 
 {% include_relative _header.html %}
 
+You can create CLI application with ``Peak\Bedrock\Cli\Application``. Internally, it use ``symfony/console`` and ``symfony/process``. The advantages of this wrapper over direct implementation with ``symfony/console`` is that it give you PSR-11 support, bootstrapping and configuration.
+
 ```php
 namespace {
 
@@ -31,3 +33,11 @@ namespace {
     }
 }
 ```
+
+You can still access to symfony console with method ``console()``
+
+```php
+$app->console()->setDefaultCommand('...');
+```
+
+Visit the official Symfony Console documentation at [https://symfony.com/doc/current/components/console.html](https://symfony.com/doc/current/components/console.html) for more infos on commands and others helper.
