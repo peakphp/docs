@@ -36,10 +36,10 @@ namespace {
 }
 ```
 
-You can still access to symfony console with method ``console()``
+You can access to symfony console instance with method ``console()``
 
 ```php
 $app->console()->setDefaultCommand('...');
 ```
 
-Visit the official Symfony Console documentation at [https://symfony.com/doc/current/components/console.html](https://symfony.com/doc/current/components/console.html) for more infos on commands and others helper.
+Visit the official [Symfony Console Documentation](https://symfony.com/doc/current/components/console.html) for more infos on commands and others helper.
