@@ -37,16 +37,16 @@ Note: Middleware can also return a Response when appropriate, and when it happen
 The main difference with handlers is that you must return a response. You cannot pass the request to the next middleware.
 
 ```php
-use Psr\Http\Server\RequestHandlerInterface;
-use Psr\Http\Message\ServerRequestInterface;
-use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Server\RequestHandlerInterface as Handler;
+use Psr\Http\Message\ServerRequestInterface as Request;
+use Psr\Http\Message\ResponseInterface as Response;
 
-class HandlerA implements RequestHandlerInterface
+class HandlerA implements Handler
 {
     /**
      * Handle the request and return a response.
      */
-    public function handle(ServerRequestInterface $request): ResponseInterface
+    public function handle(Request $request): Response
     {
         // ...
         return new Response('Hello mountains!');
