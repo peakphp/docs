@@ -1,0 +1,22 @@
+version: '3'
+services:
+
+#  site:
+#    image: jekyll/jekyll:latest
+#    command: jekyll serve
+#    volumes:
+#      - ./:/srv/jekyll
+#      - ./_vendor/bundle:/usr/local/bundle
+#    ports:
+#      - 4000:4000
+
+  github-pages:
+    image: jekyll/jekyll:pages
+    command: jekyll serve --watch --incremental --force_polling --config  _config.yml,_config.docker.yml
+    environment:
+      - JEKYLL_ENV=docker
+    volumes:
+      - ./:/srv/jekyll
+      - ./_vendor/bundle:/usr/local/bundle
+    ports:
+      - 4000:4000

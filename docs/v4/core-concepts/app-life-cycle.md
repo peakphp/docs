@@ -1,10 +1,10 @@
 ---
-id: app-flow
-title: Application flow - Core concepts
-sb: sidebar/core-concepts.html
+id: app-life-cycle
+title: Application life cycle / Core concepts
+sb: sidebar/docs.html
 ---
 
-# Application flow
+# Application life cycle
 
 Peak application are **Middlewares** centric. You can resume the flow like this. A user proceed a HTTP Request, then it is forwarded to your application HTTP stack which resolve it and return a HTTP response whenever possible.
 

@@ -44,9 +44,18 @@ footer {
   margin-top: 100px;
 }
 
+
+
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
   margin-top: 30px;
   margin-bottom: 15px;
+  &:first-of-type {
+    margin-top: 0px;
+  }
+}
+
+h3, h3:first-of-type {
+  margin-top: 50px;
 }
 
 h1 small {
@@ -77,6 +86,24 @@ table {
  CLASSES
  */
 
+.bedrock-line {
+  //position:absolute;
+  //background: #ccc;
+  //top:50px;
+  //left:0px;
+  //width:100%;
+  //display:block;
+  //height: 1px;
+}
+
+.bg-grey {
+  background-color: #fafafa;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
 .card-title {
   .card-logo {
     font-size: 1.2em;
@@ -86,28 +113,41 @@ table {
   }
 }
 
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .fixed-top {
   position: absolute;
 }
 
+.h1-logo img {
+  vertical-align: text-bottom !important;
+}
+
 .highlight {
   border-radius: 5px;
-  box-shadow: 4px 4px 0px #ccc;
+  box-shadow: 6px 6px 0px #ccc, 12px 12px 0 #ddd, 18px 18px 0 #eee;
+  font-size: 0.7rem;
 }
-.highlighter-rouge {}
+.highlighter-rouge {
+  margin-bottom:35px;
+}
 
 .navbar {
   padding:0 1rem;
 }
 
 .navbar-collapse {
-  margin-top: 5px;
+  //margin-top: 5px;
   margin-left: -1px rem;
   margin-right: -1px rem;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:first-child {
-  padding-left:0;
+  //padding-left:0;
 }
 
 .nav-link {
@@ -125,25 +165,31 @@ table {
 
 .topbar {
   //background-color: #300A24 !important;
-  background-color: #fff !important;
+  background-color: #050708 !important;
   //border-bottom: 1px solid #ccc;
-  box-shadow: 0 5px 100px #ccc;
+  //box-shadow: 0 5px 50px $mainColor, 0 5px 100px #ccc;
   height: 50px;
 
   .logo-title {
     padding-left:60px !important;
     font-size: 125%;
     position: relative;
+    color: #fff !important;
+
     .logo {
       position: absolute;
-      top: 0;
+      top: -4px;
       left: 0;
-      opacity: 0.1;
+      opacity: 1;
       transition: all ease-out 0.2s;
     }
     &:hover .logo, &.active .logo {
       opacity: 1;
       transition: all ease-in 0.2s;
+    }
+
+    .logo-text {
+      padding-top:20px;
     }
 
   }
@@ -155,15 +201,48 @@ table {
 
   .nav-item.active {
     i {
-      color: $mainColor;
-      text-shadow:0 0 2px #ccc;
+      display: none;
+      //color: $mainColor;
+      //text-shadow:0 0 2px #ccc;
     }
+  }
+
+  .nav-item {
+    border-right: 1px solid #333;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-size:0.8rem;
+  }
+
+  .navbar-logo.nav-item {
+    border-right:0;
+  }
+
+  .nav-item i {
+    display:none;
+  }
+
+  .nav-link, .nav-item {
+    color:#ccc;
   }
 
   @media (min-width: $sm + 1) and (max-width: $md) {
     padding-top:0;
     padding-bottom:0;
   }
+}
+
+.page-home {
+  .highlighter-rouge {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width:600px;
+  }
+}
+
+.site-footer {
+  font-size: 0.7rem;
 }
 
 .wrapper {

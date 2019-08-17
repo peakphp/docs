@@ -1,7 +1,7 @@
 ---
 id: middlewares-handlers
-title: Middlewares and Handlers - Core concepts
-sb: sidebar/core-concepts.html
+title: Middlewares and Handlers / Core concepts
+sb: sidebar/docs.html
 ---
 
 # Middlewares and Handlers
