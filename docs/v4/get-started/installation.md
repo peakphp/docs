@@ -6,6 +6,11 @@ sb: sidebar/docs.html
 
 ## Installation
 
+{% capture alert_content %}
+Before you go on, you might want try <a href="{{ site.url }}/docs/v4/get-started/peak-app-skeleton">peak project</a> to even start faster.
+{% endcapture %}
+{% include alert.html content=alert_content %}
+
 ##### System Requirements
 
  - PHP 7.2 or newer
@@ -15,7 +20,7 @@ sb: sidebar/docs.html
 ##### Application Requirements
 
  - a PSR-7 compatible library
- 
+
 
 ### Step 1: Install Composer
 

@@ -1,9 +1,8 @@
 ---
+id: collection-properties-bags
 title: Peak/Collection - Properties Bags
 sb: sidebar/docs.html
 ---
-
-{% include_relative _header.html %}
 
 # Properties Bags
 

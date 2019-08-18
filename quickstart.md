@@ -1,7 +1,7 @@
 ---
-sb: sidebar/quickstart.html
-id: quickstart
-title: Quick Start
+sb: sidebar/docs.html
+id: app-skeleton
+title: Peak Application Skeleton project
 ---
 
 {% include breadcrumb2.html base_url=site.url url_1="" text_1="Home" text_2="Quick Start" %}

@@ -1,9 +1,8 @@
 ---
+id: dotnotation-collection
 title: Peak/Collection - Dot Notation Collection
 sb: sidebar/docs.html
 ---
-
-{% include_relative _header.html %}
 
 # DotNotation Collection
 

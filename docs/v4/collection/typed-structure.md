@@ -3,8 +3,6 @@ title: Peak/Collection - Typed Structures
 sb: sidebar/docs.html
 ---
 
-{% include_relative _header.html %}
-
 # Typed Structure
 
 Typed structure help you to enforce types over an array stored in a class while waiting for PHP 7.4 typed properties.
