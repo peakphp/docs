@@ -6,7 +6,7 @@ title: Contributing
 {% include breadcrumb2.html base_url=site.url url_1="" text_1="Home" text_2="Contributing" %}
 
 # Contributing
-Peak is an open source and everyone is welcome to contribute.
+Peak is an open source project and everyone is welcome to contribute.
  
 ### Coding Standards
 
