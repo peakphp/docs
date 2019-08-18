@@ -55,7 +55,7 @@ class HandlerA implements Handler
 ```
 
 ### Closure middleware
-You can also write middlewares and handlers with closure. Underneath, they will be wrapped in `CallableMiddleware` which is *PSR-15* compliant. The only downside is that closure are less reusable outside your application. Also, it is generally not a good idea to use closure for complex middleware, but for small task and prototyping, they comes really handy.
+You can also write middlewares and handlers with closure. Underneath, they are wrapped in `CallableMiddleware` which is *PSR-15* compliant. The only downside is that closure are less reusable outside your application. Also, it is generally not a good idea to use closure for complex middleware, but for small task and prototyping, they comes really handy.
 
 ```php
 $myMiddleware = function ($request, $handler) {

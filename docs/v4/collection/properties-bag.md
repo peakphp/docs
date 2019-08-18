@@ -1,6 +1,6 @@
 ---
 title: Peak/Collection - Properties Bags
-sb: sidebar/collection.html
+sb: sidebar/docs.html
 ---
 
 {% include_relative _header.html %}

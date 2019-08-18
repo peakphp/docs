@@ -1,13 +1,13 @@
 ---
 title: Peak/Collection - Typed Structures
-sb: sidebar/collection.html
+sb: sidebar/docs.html
 ---
 
 {% include_relative _header.html %}
 
 # Typed Structure
 
-Typed structure is an easy to enforce types over an array or class while waiting for PHP 7.4 typed properties.
+Typed structure help you to enforce types over an array stored in a class while waiting for PHP 7.4 typed properties.
 
 Here an example:
 
@@ -72,7 +72,7 @@ Structure implements __get() and __set(). Setting an unknown property or the wro
 
 ```php
 $user->id = 134; // ok
-$user->id = 'test'; // will throw an exception
+$user->id = 'test'; // will throw an exception because id has integer type
 ````
 
 #### Immutable structure

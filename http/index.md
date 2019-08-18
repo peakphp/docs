@@ -26,11 +26,11 @@ A stack itself can be added to a parent stack.
 $stack = new Stack([
     MiddlewareA::class,
     new Stack([
-        MiddlewareA1::class,
-        MiddlewareA2::class,
+        MiddlewareC::class,
+        MiddlewareD::class,
         new Stack([
-            MiddlewareAA1::class,
-            MiddlewareAA2::class,
+            MiddlewareE::class,
+            MiddlewareF::class,
         ], $handlerResolver),
     ], $handlerResolver),
     MiddlewareB::class,

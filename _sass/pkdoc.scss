@@ -12,6 +12,7 @@ $lg: map-get($grid-breakpoints, lg);
 $xl: map-get($grid-breakpoints, xl);
 
 $mainColor: #ff3000;
+$blackColor: #050708;
 
 $sidebarWidth: 270px;
 
@@ -165,20 +166,25 @@ table {
 
 .topbar {
   //background-color: #300A24 !important;
-  background-color: #050708 !important;
+  background-color: $blackColor !important;
   //border-bottom: 1px solid #ccc;
   //box-shadow: 0 5px 50px $mainColor, 0 5px 100px #ccc;
   height: 50px;
 
   .logo-title {
+    position:absolute;
+    top:0;
     padding-left:60px !important;
     font-size: 125%;
-    position: relative;
+    line-height: 50px;
+    text-decoration: none;
+    //position: relative;
+
     color: #fff !important;
 
     .logo {
       position: absolute;
-      top: -4px;
+      top: 0px;
       left: 0;
       opacity: 1;
       transition: all ease-out 0.2s;
@@ -199,6 +205,10 @@ table {
     padding-right: 0.9em;
   }
 
+  .navbar-collapse {
+    background-color: $blackColor !important;
+  }
+
   .nav-item.active {
     i {
       display: none;
@@ -216,6 +226,12 @@ table {
 
   .navbar-logo.nav-item {
     border-right:0;
+  }
+
+  .navbar-toggler {
+    position:absolute;
+    top:10px;
+    right:10px
   }
 
   .nav-item i {

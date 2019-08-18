@@ -1,6 +1,6 @@
 ---
 title: Peak/Collection - Dot Notation Collection
-sb: sidebar/collection.html
+sb: sidebar/docs.html
 ---
 
 {% include_relative _header.html %}
