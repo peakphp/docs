@@ -6,7 +6,11 @@ sb: sidebar/docs.html
 
 # Middlewares and Handlers
 
+
 Middlewares and handlers are essentials parts of Peak Applications stack. Their job is to simply receive a request, do stuff and call the next middleware or return a response whenever possible. They are also fully compatible with [PSR-7](https://www.php-fig.org/psr/psr-7/) and [PSR-15](https://www.php-fig.org/psr/psr-15/)
+
+
+### Middleware
 
 ```php
 use Psr\Http\Server\MiddlewareInterface;
@@ -22,7 +26,7 @@ class ClimbMiddleware implements MiddlewareInterface
      */
     public function process(Request $request, Handler $handler): Response 
     {
-        // call the next
+        // call the next middleware
         return $handler->handle($request);
         // or 
         return new Response('Hello mountains!');
@@ -30,9 +34,8 @@ class ClimbMiddleware implements MiddlewareInterface
 }
 ```
 
-Note: Middleware can also return a Response when appropriate, and when it happens, the chain of middlewares is stopped.
 
-### Handlers: 
+### Handlers
 
 The main difference with handlers is that you must return a response. You cannot pass the request to the next middleware.
 
@@ -55,16 +58,18 @@ class HandlerA implements Handler
 ```
 
 ### Closure middleware
-You can also write middlewares and handlers with closure. Underneath, they are wrapped in `CallableMiddleware` which is *PSR-15* compliant. The only downside is that closure are less reusable outside your application. Also, it is generally not a good idea to use closure for complex middleware, but for small task and prototyping, they comes really handy.
+You can also write middlewares and handlers with closure. Underneath, they are wrapped in `CallableMiddleware` which is *PSR-15* compliant. 
+
+One of the downside of using closure is that they are less reusable outside your application. Also, it is generally not a good idea to use closure for complex middleware, but for small task and prototyping, they comes really handy.
 
 ```php
 $myMiddleware = function ($request, $handler) {
-    // ...
+    // ... do stuff
     return $handler->handle($request);
 }
 
 $myHandler = function ($request) {
-    // ...
+    // ... do stuff
     return new Response('...');
 }
 ```

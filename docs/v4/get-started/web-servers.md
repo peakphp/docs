@@ -10,7 +10,7 @@ All HTTP requests must be forwarded to a entry point (usually ```index.php```).
 
 ### Apache configuration
 
-Ensure your .htaccess and index.php files are in the same public-accessible directory. The .htaccess file should contain this code:
+Ensure your ```.htaccess``` and ```index.php``` files are in the same public-accessible directory. The .htaccess file should contain this code:
 
 ```
 RewriteEngine On
