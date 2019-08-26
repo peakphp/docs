@@ -6,7 +6,7 @@ sb: sidebar/docs.html
 
 # DotNotation Collection
 
-A DotNotation Collection extends [Collection]({{ site.url }}collection/collection) and implements [Peak\Blueprint\Collection\Dictionary](https://github.com/peakphp/framework/blob/master/src/Blueprint/Collection/Dictionary.php) and give you 4 new methods to manage your collection easily:
+A DotNotation Collection extends [Collection]({{ site.url }}collection/collection) and implements [Peak\Blueprint\Collection\Dictionary](https://github.com/peakphp/framework/blob/master/src/Blueprint/Collection/Dictionary.php) which give you 4 new methods to manage your collection easily:
  - ``get()``
  - ``set()``
  - ``add()``
@@ -52,9 +52,9 @@ You can change a property value(s) with ``set()``:
 $coll->set('customer.address.street', '123 Abc Blvd');
 ```
 
-#### Dealing with numeric index
+#### Dealing with numeric array keys
 
 Accessing to a element of array is straightforward:
 ```php
-$hobby = $coll->get('customer.hobbies.1'); // skiing
+$hobby = $coll->get('customer.hobbies.1'); // return skiing
 ```
