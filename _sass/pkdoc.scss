@@ -152,6 +152,15 @@ table {
   //margin-top: 5px;
   margin-left: -1px rem;
   margin-right: -1px rem;
+  transition:none;
+  &.show {
+    position: absolute;
+    text-align: left;
+    top: 50px;
+    margin: 0px;
+    left: 0px;
+    right: 0px;
+  }
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:first-child {
@@ -247,6 +256,16 @@ table {
 
   .nav-link, .nav-item {
     color:#ccc;
+  }
+
+  .navbar-nav {
+    padding-left:150px;
+  }
+
+  @media (max-width: $lg) {
+    .navbar-nav {
+      padding:15px;
+    }
   }
 
   @media (min-width: $sm + 1) and (max-width: $md) {
