@@ -8,7 +8,7 @@ sb: sidebar/docs.html
 
 ### Adding routes to your application
 
-Creating HTTP Routes is very easy. and can be done with methods:
+Creating HTTP Routes is very easy and can be done with preset route methods. Using one of the methods below will automatically add the route to your application stack:
 
  - ```get()```
  - ```post()```
@@ -17,9 +17,37 @@ Creating HTTP Routes is very easy. and can be done with methods:
  - ```delete()```
  - ```all()```
  
-Using one of the methods above will automatically add them to your application stack
- 
+Usage:
+
+``$app->[method](string $path, mixed $stack);``
+
 ```php
-$app->get(string $path, mixed $stack);
+$app->get('/hello', function() {
+    return new TextResponse('Hello!');
+});
 ```
+
+Use ``all()`` if you want to respond to a route path while ignoring the request method.
+
+```php
+$app->all('/hello', function() {
+    return new TextResponse('Hello!');
+});
+```
+
+### Using stackRoute()
+
+With ``stackRoute()``, you have to pass the request method as argument along with the path and the stack.
+
+Usage:
+
+``$app->stackRoute(?string $method, string $path, mixed $stack);``
+
+```php
+$app->stackRoute('GET', '/hello', function() {
+    return new TextResponse('Hello!');
+});
+```
+
+Note: Passing ``null`` as ``$method`` argument will simply create a route that ignore request method like ``all()``.
 
