@@ -14,9 +14,9 @@ Example without group:
 $app
     ->get('/users/action/edit', [new MiddlewareA(), new HandlerA()])
     ->get('/users/action/update', [new MiddlewareA(), new HandlerA()])
-    ->get('/users/action/cancel', [new MiddlewareA(), new HandlerA()])
-    ->get('/users//mypath1', new HandlerA())
-    ->get('/users//mypath2', new HandlerA());
+    ->get('/users/action/upgrade', [new MiddlewareA(), new HandlerA()])
+    ->get('/users/profile', new HandlerA())
+    ->get('/users/settings', new HandlerA());
 
 ```
 
@@ -31,10 +31,10 @@ $app
                     ->stack(new MiddlewareA())
                     ->get('/edit', new HandlerB())
                     ->get('/update', new HandlerB())
-                    ->get('/cancel', new HandlerB());
+                    ->get('/upgrade', new HandlerB());
             })
-            ->get('/mypath1', new HandlerA())
-            ->get('/mypath2', new HandlerA());
+            ->get('/profile', new HandlerA())
+            ->get('/settings', new HandlerA());
     });
 ```
 
