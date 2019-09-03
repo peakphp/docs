@@ -37,7 +37,7 @@ $app->all('/hello', function() {
 
 ### Using stackRoute()
 
-With ``stackRoute()``, you have to pass the request method as argument along with the path and the stack.
+Alternatively, you can create and stack new routes With ``stackRoute()``. You have to pass the request method as argument along with the path and the stack.
 
 Usage:
 
@@ -49,5 +49,5 @@ $app->stackRoute('GET', '/hello', function() {
 });
 ```
 
-Note: Passing ``null`` as ``$method`` argument will simply create a route that ignore request method like ``all()``.
+Note: Passing ``null`` as ``$method`` argument will simply create a route that ignore the request method.
 

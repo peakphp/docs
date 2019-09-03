@@ -42,10 +42,5 @@ $app
 Join us there at <a href="https://peakframework.slack.com">peakframework.slack.com</a><br>
 <a class="pull-right btn btn-sm btn-warning" href="https://join.slack.com/t/peakframework/shared_invite/enQtNzQ3NDQyNTg2Mjk0LTJhMjg1YmFhMjgyYTczYWRlMGYxZDkxNGVjNTcxYTlhYTdjZTUzMzRmYTY5NTIzYzgzZWVlYjQyMzBiMmE1OWY">Join Slack Channel</a>
 
-
-<h5>IRC</h5>
-The official <a href="https://freenode.net/">Freenode</a> IRC channel is
-<code>#peakphp</code>.<br><a class="pull-right btn btn-sm btn-warning" href="irc://irc.freenode.net:6667/slimphp">Visit the IRC channel</a>
-
 </div>
         

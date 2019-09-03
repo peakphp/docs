@@ -6,10 +6,10 @@ sb: sidebar/docs.html
 
 # Peak Application Skeleton
 
-In a hurry? Want to start writing & running your app without the hassle of preparing your project structure? This application skeleton project can help you to start even faster.
+In a hurry? Want to start writing & running your app without the hassle of preparing your project structure? This application skeleton project can help you to start quickly.
 
 ### What is it?
-This application skeleton is the default "opinionated" implementation of the peak framework that comes with session, configuration, database & migration, phpunit, folder structure and use [zendframework/zend-diactoros](https://packagist.org/packages/zendframework/zend-diactoros) as PSR-7 library.
+This application skeleton is the default "opinionated" implementation of the peak framework that comes with session, configuration, database & migration, project structure and use [zendframework/zend-diactoros](https://packagist.org/packages/zendframework/zend-diactoros) as PSR-7 library.
 
 <i class="fab fa-github"></i> [https://github.com/peakphp/peak](https://github.com/peakphp/peak)
 
