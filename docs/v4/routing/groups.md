@@ -4,9 +4,7 @@ title: Routing groups
 sb: sidebar/docs.html
 ---
 
-# Group
-
-### Grouping routes
+# Grouping routes
 
 Repetitive routes prefixes can be reorganized into groups. Grouping routes will  generally improve performances of routing resolution. They also better encapsulate repetitive middleware(s) over certain routes group.
 

@@ -37,7 +37,7 @@ $app->all('/hello', function() {
 
 ### Using stackRoute()
 
-Alternatively, you can create and stack new routes With ``stackRoute()``. You have to pass the request method as argument along with the path and the stack.
+Alternatively, you can create and stack new routes with ``stackRoute()``. You have to pass the request method as argument along with the path and the stack.
 
 Usage:
 
