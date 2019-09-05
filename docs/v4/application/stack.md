@@ -53,7 +53,7 @@ The same differences between ``stack()`` and ``createStack()`` applies to ``stac
 
 You **cannot** nest method ``stackRoute()`` inside a ``stack()`` and ``stackRoute``. The same apply to ``get()``,``post()``, ``put()``, ``patch()``, ``delete()``, ``all()``
 
-```
+```php
 // this won't work
 $app->stack( [
     new MiddlewareA(),
@@ -69,7 +69,7 @@ $app->stack( [
 
 The proper way is to use ``createStack()`` and ``createRoute()``:
 
-```
+```php
 $app->stack([
     new MiddlewareA(),
     new MiddlewareB(),
