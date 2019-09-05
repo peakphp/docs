@@ -45,13 +45,13 @@ $app->get('/hello', [
 
 ### Differences between ``stack()`` and ``createStack()``
 
-Internally, when you call method ``stack()``, a new ``Stack`` object is created with yours middlewares/handlers and it is finally stored inside the main internal application ``Stack``. 
+Internally, when you call method ``stack()``, a new ``Stack`` object is created with yours middlewares/handlers and it is stored inside the main internal application ``Stack`` afterward. 
 
-You **cannot** nest method ``stack()`` inside another ``stack()`` or ``stackRoute()``, because the child stack will be store before is parent stack.
+You **cannot** call method ``stack()`` inside another ``stack()`` or ``stackRoute()``, because the child stack will be store before is parent stack.
 
 The same differences between ``stack()`` and ``createStack()`` applies to ``stackRoute()`` and ``createRoute()``.
 
-You **cannot** nest method ``stackRoute()`` inside a ``stack()`` and ``stackRoute``. The same apply to ``get()``, ``post()``, ``put()``, ``patch()``, ``delete()``, ``all()``
+You **cannot** call method ``stackRoute()`` inside a ``stack()`` and ``stackRoute``. The same apply to ``get()``, ``post()``, ``put()``, ``patch()``, ``delete()``, ``all()``
 
 ```php
 // this won't work
@@ -63,7 +63,7 @@ $app->stack( [
         new MiddlewareE(),
     ])
     $app->get('/hello', new HandlerA())
-    new 404Handler(),
+    new Handler(),
 ]);
 ```
 
@@ -78,7 +78,7 @@ $app->stack([
         new MiddlewareE(),
     ])
     $app->createRoute('GET', '/hello', new HandlerA())
-    new 404Handler(),
+    new Handler(),
 ]);
 ```
 
