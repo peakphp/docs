@@ -59,7 +59,7 @@ $app = $httpAppBuilder
 By default, environment is set to ``prod``. To change that: 
 
 ```php
-$httpappBuilder->setEnv('dev');
+$httpAppBuilder->setEnv('dev');
 ```
 
 ##### Change the Kernel Class ``setKernelClass()``
@@ -67,7 +67,7 @@ $httpappBuilder->setEnv('dev');
 By default, class ``Peak\\Bedrock\\Kernel`` is used. To change that: 
 
 ```php
-$httpappBuilder->setKernelClass(MyAppKernel::class);
+$httpAppBuilder->setKernelClass(MyAppKernel::class);
 ```
 
 ##### Change the container
