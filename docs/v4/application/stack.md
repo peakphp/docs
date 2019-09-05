@@ -51,7 +51,7 @@ You **cannot** nest method ``stack()`` inside another ``stack()`` or ``stackRout
 
 The same differences between ``stack()`` and ``createStack()`` applies to ``stackRoute()`` and ``createRoute()``.
 
-You **cannot** nest method ``stackRoute()`` inside a ``stack()`` and ``stackRoute``. The same apply to ``get()``,``post()``, ``put()``, ``patch()``, ``delete()``, ``all()``
+You **cannot** nest method ``stackRoute()`` inside a ``stack()`` and ``stackRoute``. The same apply to ``get()``, ``post()``, ``put()``, ``patch()``, ``delete()``, ``all()``
 
 ```php
 // this won't work
@@ -67,7 +67,7 @@ $app->stack( [
 ]);
 ```
 
-The proper way is to use ``createStack()`` and ``createRoute()``:
+The proper way to nested stacks is to use ``createStack()`` and ``createRoute()``:
 
 ```php
 $app->stack([
@@ -86,7 +86,7 @@ $app->stack([
 ### Conditional Stack
 
 ```php
-$app->stackIfTrue($condition, [
+$app->stackIfTrue(<condition>, [
     new MiddlewareA(),
     new MiddlewareB(),
     new MiddlewareC(),
