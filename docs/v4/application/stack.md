@@ -26,22 +26,12 @@ $app->stack([
 ]);
 ```
 
-If we pass a request through the example above, the ``MiddlewareF()`` is executed than, the child stack will call the parent stack to resume the process by calling ``HandlerA``, 
+If we pass a request through the example above, the ``MiddlewareF`` is executed than, the child stack will call the parent stack to resume the process by calling ``HandlerA``, 
 
-
-### Conditional Stack
-
-```php
-$app->stackIfTrue($condition, [
-    new MiddlewareA(),
-    new MiddlewareB(),
-    new MiddlewareC(),
-])
-```
 
 ### A Route is also a Stack
 
-```
+```php
 $app->get('/hello', [
     new MiddlewareA(),
     new MiddlewareB(),
@@ -90,4 +80,15 @@ $app->stack([
     $app->createRoute('GET', '/hello', new HandlerA())
     new 404Handler(),
 ]);
+```
+
+
+### Conditional Stack
+
+```php
+$app->stackIfTrue($condition, [
+    new MiddlewareA(),
+    new MiddlewareB(),
+    new MiddlewareC(),
+])
 ```
