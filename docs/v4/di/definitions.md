@@ -1,6 +1,6 @@
 ---
 id: di-definitions
-title: Dependency Injection Definitions
+title: Dependency Injection - Definitions
 sb: sidebar/docs.html
 ---
 # Dependency Injection
@@ -58,12 +58,10 @@ $container->bindFactory(Finger::class, function (Container $c, $args) {
     );
 });
 
-// create foo successfully
 $foo = $container->get(Foo::class);
 $foo2 = $container->get(Foo::class);
 // $foo !== $foo2
 ```
-
 
 ### Prototype bind
 
@@ -101,7 +99,7 @@ $chest = $container->get(Chest::class);
 
 ### Array of definition
 
-Array of definition represent a powerful way to describe and group how dependencies can be resolve for a definition. It also support nested definition.
+Array of definition represent a powerful way to describe and group how dependencies can be resolve for a definition. It also support nested definition and passing normal argument(s) value(s).
 
 Supported types supported in an array of definition: callable, classname string, object and array of definition. 
 
@@ -109,15 +107,11 @@ When using class name string, the first item of the array always represent the c
 
 ```php
 class A {
-    public function __construct(B $b, C $c, $id) {
-        // ...
-    }
+    public function __construct(B $b, C $c, $id) { ... }
 }
 
 class B {
-    public function __construct(D $d, $name) {
-        // ...
-    }
+    public function __construct(D $d, $name) { ... }
 }
 
 class C {}

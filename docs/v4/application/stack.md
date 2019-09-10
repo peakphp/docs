@@ -26,7 +26,7 @@ $app->stack([
 ]);
 ```
 
-If we pass a request through the example above, the ``MiddlewareF`` is executed than, the child stack will call the parent stack to resume the process by calling ``HandlerA``, 
+If we pass a request through the example above, after the ``MiddlewareF`` is executed, the child stack call the parent stack to resume the process by calling ``HandlerA``, 
 
 
 ### A Route is also a Stack

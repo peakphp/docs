@@ -1,45 +1,11 @@
 ---
 id: di-basic-usage
-title: Dependency Injection Basic Usage
+title: Dependency Injection - Basic Usage
 sb: sidebar/docs.html
 ---
 # Dependency Injection
 
 ### Basic usage
-
-##### Using Autowiring
-
-No configuration needed. Just type-hint your constructor parameters and the container can guess which dependencies to inject.
-
-```php
-class Bar {}
-class Foo {
-    public $bar;
-    public function __construct(Bar $bar, $id = null, $alias = null) {
-        $this->bar = $bar;
-    }
-}
-
-$container = new Container;
-$foo = $container->get(Foo::class);
-```
-In example above, a new ``Bar`` instance is created automatically each time ```Foo``` is created. This mechanism rely on ```Reflection``` to resolve objects dependencies. This is the default behavior of Peak Di.
-
-Autowiring will try to create the object instance if no stored instance or matching definition found.
-
-You can get a stored class instance by using ```get()```. If no instance can be found, it will check definitions and finally use autowiring in last resort.
-
-Under the hood, the flow of ``get()`` is:
- 1. Check for stored instance
- 2. Check for definition
- 3. Try autowiring
- 4. Throw exception
- 
-You can disable the autowiring to prevent step ``3`` and let the container throw an exception if no definition match the requested object. 
-
-```php
-$container->disableAutowiring();
-```
 
 ### Store a class instance with ``set()``
 
@@ -48,16 +14,11 @@ You can store an class instance in the container with ```set()```.
 ```php
 $container->set(new ClimbingSession());
 
-$foo1 = $container->get(ClimbingSession::class);
-$foo2 = $container->get(ClimbingSession::class);
+$class1 = $container->get(ClimbingSession::class);
+$class2 = $container->get(ClimbingSession::class);
 ```
 
-In example above, ```$foo1``` and ```$foo2``` will have the same instance of ```Bar```.
-
-```php
-echo $foo1->bar->name; //output: John Bar
-echo $foo2->bar->name; //output: John Bar
-```
+In example above, ```$class1``` and ```$class2``` will be the same instance of ClimbingSession.
 
 ### Verify a stored class instance with ``has()``
 
@@ -86,7 +47,6 @@ $stream = $container->get('LogStream');
 
 // or with addAlias()
 $container->addAlias(Monolog\Handler\StreamHandler::class, 'LogStream');
-// ...
 $container->set(new Monolog\Handler\StreamHandler);
 $stream = $container->get('LogStream');
 ```

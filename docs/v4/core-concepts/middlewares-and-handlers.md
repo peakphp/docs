@@ -26,7 +26,8 @@ class ClimbMiddleware implements MiddlewareInterface
      */
     public function process(Request $request, Handler $handler): Response 
     {
-        // call the next middleware
+        // do something ...
+        // and finish by calling the next middleware
         return $handler->handle($request);
         // or 
         return new Response('Hello mountains!');
@@ -58,7 +59,7 @@ class HandlerA implements Handler
 ```
 
 ### Closure middleware
-You can also write middlewares and handlers with closure. Underneath, they are wrapped in `CallableMiddleware` which is *PSR-15* compliant. 
+You can also write middlewares and handlers with closure. Underneath, they are wrapped in `Peak\Http\Middleware\CallableMiddleware` which is *PSR-15* compliant. 
 
 One of the downside of using closure is that they are less reusable outside your application. Also, it is generally not a good idea to use closure for complex middleware, but for small task and prototyping, they comes really handy.
 
