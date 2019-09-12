@@ -1,10 +1,14 @@
-{% include breadcrumb3.html base_url=site.url url_1="" text_1="Home" url_2="packages" text_2="Packages" text_3="Config" %}
+---
+id: config-index
+title: Config
+sb: sidebar/docs.html
+---
 
 # Peak/Config
 #### Manage multiple configuration resources like a pro!
 This package help you to manage configurations of various format and source and into one unified configuration collection.
 
-## Installation
+This package is already part of Peak Framework but can be also used as standalone:
 
 ```
 $ composer require peak/config
