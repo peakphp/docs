@@ -1,6 +1,6 @@
 ---
 id: docs-home
-title: Documentations
+title: Docs
 sb: sidebar/docs.html
 ---
 
