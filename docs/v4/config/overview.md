@@ -4,7 +4,7 @@ title: Config
 sb: sidebar/docs.html
 ---
 
-# Peak/Config
+# Config
 #### Manage multiple configuration resources like a pro!
 This package help you to manage configurations of various format and source and into one unified configuration collection.
 
