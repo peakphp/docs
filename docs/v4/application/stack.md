@@ -1,10 +1,10 @@
 ---
 id: application-stack
-title: Application Stack
+title: Application HTTP Stack
 sb: sidebar/docs.html
 ---
 
-# Application Stack
+# Application HTTP Stack
 
 Because of the nature of middlewares, the process to resolve them is very linear, like a pipeline, where at the end you receive a response. 
 

@@ -1,5 +1,5 @@
 ---
-id: config-index
+id: config-overview
 title: Config
 sb: sidebar/docs.html
 ---
