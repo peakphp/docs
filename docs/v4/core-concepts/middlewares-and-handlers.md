@@ -7,7 +7,7 @@ sb: sidebar/docs.html
 # Middlewares and Handlers
 
 
-Middlewares and handlers are essentials parts of Peak Applications stack. Their job is to simply receive a request, do stuff and call the next middleware or return a response whenever possible. They are also fully compatible with [PSR-7](https://www.php-fig.org/psr/psr-7/) and [PSR-15](https://www.php-fig.org/psr/psr-15/)
+Middlewares and handlers are essentials parts of Peak Applications stack. Their job is to simply receive a request, do stuff and call the next middleware or return a response whenever possible. They are also fully compatible with [PSR-7](https://www.php-fig.org/psr/psr-7/) and [PSR-15](https://www.php-fig.org/psr/psr-15/).
 
 
 ### Middleware
@@ -38,7 +38,7 @@ class ClimbMiddleware implements MiddlewareInterface
 
 ### Handlers
 
-The main difference with handlers is that you must return a response. You cannot pass the request to the next middleware.
+The main difference with middlewares is that with handlers, you must return a response. You cannot pass the request to the next middleware.
 
 ```php
 use Psr\Http\Server\RequestHandlerInterface as Handler;
