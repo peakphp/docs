@@ -7,7 +7,7 @@ theme: jekyll-theme-cayman
 url: https://peakphp.github.io/docs/
 edit_url: https://github.com/peakphp/docs/edit/master/
 small_logo: <img src="https://raw.githubusercontent.com/peakphp/art/master/logo-clean-50x50.png" alt="Peak">
-latest_release: 4.1.0
-latest_release_url: https://github.com/peakphp/framework/releases/tag/4.1.0
+latest_release: 4.2.0
+latest_release_url: https://github.com/peakphp/framework/releases/tag/4.2.0
 plugins:
   - jekyll-seo-tag
